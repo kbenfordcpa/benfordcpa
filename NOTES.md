@@ -47,3 +47,13 @@ Short changelog of what this Next.js site improves relative to the live Squaresp
 ## Intentionally not invented
 
 - Phone number and street address remain unpublished until real NAP is confirmed.
+
+## Analytics (GA4 + Microsoft Clarity)
+
+Set on Vercel (Production + Preview) and locally in `.env.local`:
+
+- `NEXT_PUBLIC_GA_MEASUREMENT_ID` — GA4 Measurement ID (`G-…`)
+- `NEXT_PUBLIC_CLARITY_PROJECT_ID` — Clarity project ID
+
+Scripts load from `src/components/Analytics.tsx` only when IDs are present.
+Clarity records session replays; mention analytics/session tools in the privacy policy when that page is published.

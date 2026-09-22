@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Libre_Baskerville, Source_Sans_3 } from "next/font/google";
+import { Analytics } from "@/components/Analytics";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { JsonLd } from "@/components/JsonLd";
@@ -98,6 +99,7 @@ export default function RootLayout({
       className={`${libreBaskerville.variable} ${sourceSans.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col font-sans">
+        <Analytics />
         <JsonLd data={websiteJsonLd()} />
         <JsonLd data={professionalServiceJsonLd()} />
         <a
