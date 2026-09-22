@@ -7,15 +7,15 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "About Kolby Benford, CPA | Florence–Tuscumbia, AL",
+    absolute: "About Kolby Benford, CPA | the Shoals, AL",
   },
   description:
-    "Meet Kolby Benford, licensed Alabama CPA — Air Force veteran, public accounting background, and Controller in the Florence area. Stewardship-minded guidance for your finances.",
+    "Meet Kolby Benford, licensed Alabama CPA — Air Force veteran, public accounting background, and Controller in the Shoals area. Stewardship-minded guidance for your finances.",
   alternates: { canonical: "/about" },
   openGraph: {
-    title: "About Kolby Benford, CPA | Florence–Tuscumbia, AL",
+    title: "About Kolby Benford, CPA | the Shoals, AL",
     description:
-      "Meet Kolby Benford, licensed Alabama CPA — Air Force veteran, public accounting background, and Controller in the Florence area.",
+      "Meet Kolby Benford, licensed Alabama CPA — Air Force veteran, public accounting background, and Controller in the Shoals area.",
     url: "/about",
   },
 };
@@ -40,9 +40,8 @@ export default function AboutPage() {
             About Kolby Benford, CPA
           </h1>
           <p className="mt-4 max-w-2xl text-cream/85">
-            Founder of {siteConfig.name} — licensed Alabama CPA serving
-            Florence, Tuscumbia, and the Shoals with stewardship-minded financial
-            guidance.
+            Founder of {siteConfig.name} — licensed Alabama CPA serving the
+            Shoals area with stewardship-minded financial guidance.
           </p>
         </div>
       </section>
@@ -86,7 +85,7 @@ export default function AboutPage() {
             </li>
             <li>
               In <strong>2024</strong>, transitioned into industry as{" "}
-              <strong>Controller</strong> for an insurance agency in the Florence
+              <strong>Controller</strong> for an insurance agency in the Shoals
               area, leading the accounting department and overseeing financial
               reporting across multiple entities.
             </li>
@@ -128,7 +127,7 @@ export default function AboutPage() {
             Life in the Shoals
           </h2>
           <p className="mt-4 leading-relaxed text-charcoal/85">
-            Kolby lives in the Tuscumbia area with his wife, Leann, and their
+            Kolby lives in the Shoals area with his wife, Leann, and their
             son, Thomas. They’re active members of Spring Valley Church of God.
             Outside of work, Kolby enjoys spending time with his family, camping,
             and woodworking.
@@ -140,7 +139,7 @@ export default function AboutPage() {
             Work with Kolby
           </h2>
           <p className="mt-2 text-charcoal/80">
-            Looking for a CPA in Florence, Tuscumbia, or the Shoals who brings
+            Looking for a CPA in the Shoals who brings
             both technical skill and a stewardship mindset?{" "}
             <Link
               href="/contact"

@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CtaBanner } from "@/components/CtaBanner";
-import { FaqSection } from "@/components/FaqSection";
 import { JsonLd } from "@/components/JsonLd";
-import {
-  breadcrumbJsonLd,
-  faqPageJsonLd,
-} from "@/lib/schema";
+import { ServiceCard } from "@/components/ServiceCard";
+import { breadcrumbJsonLd } from "@/lib/schema";
 import { scriptureQuote, services, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -27,7 +24,6 @@ export const metadata: Metadata = {
 export default function ServicesPage() {
   return (
     <>
-      <JsonLd data={faqPageJsonLd()} />
       <JsonLd
         data={breadcrumbJsonLd([
           { name: "Home", path: "/" },
@@ -44,8 +40,8 @@ export default function ServicesPage() {
             Financial services rooted in stewardship
           </h1>
           <p className="mt-4 max-w-2xl text-cream/85">
-            Six focused services to help individuals and business owners in
-            Florence, Tuscumbia, Muscle Shoals, and across the Shoals manage
+            Six focused services to help individuals and business owners in the
+            Shoals area manage
             their finances with wisdom, clarity, and integrity — from everyday
             tax needs to strategic financial leadership.
           </p>
@@ -61,50 +57,18 @@ export default function ServicesPage() {
         </blockquote>
       </div>
 
-      <div className="mx-auto max-w-6xl space-y-10 px-4 pb-8 sm:px-6 lg:px-8">
-        {services.map((service) => (
-          <article
-            key={service.slug}
-            id={service.slug}
-            className="scroll-mt-24 rounded-xl border border-navy/10 bg-white p-6 shadow-sm sm:p-8"
-          >
-            <h2 className="font-serif text-2xl font-semibold text-navy sm:text-3xl">
-              {service.title}
-            </h2>
-            <p className="mt-1 text-sm font-medium text-gold-dark">
-              {service.subtitle}
-            </p>
-            <p className="mt-4 text-charcoal/85 leading-relaxed">
-              {service.summary}
-            </p>
-            <dl className="mt-6 grid gap-4 sm:grid-cols-3">
-              <div className="rounded-lg bg-cream p-4">
-                <dt className="text-xs font-semibold uppercase tracking-wider text-navy">
-                  What it is
-                </dt>
-                <dd className="mt-2 text-sm text-charcoal/80 leading-relaxed">
-                  {service.whatItIs}
-                </dd>
-              </div>
-              <div className="rounded-lg bg-cream p-4">
-                <dt className="text-xs font-semibold uppercase tracking-wider text-navy">
-                  Who it’s for
-                </dt>
-                <dd className="mt-2 text-sm text-charcoal/80 leading-relaxed">
-                  {service.whoItsFor}
-                </dd>
-              </div>
-              <div className="rounded-lg bg-cream p-4">
-                <dt className="text-xs font-semibold uppercase tracking-wider text-navy">
-                  Outcome
-                </dt>
-                <dd className="mt-2 text-sm text-charcoal/80 leading-relaxed">
-                  {service.outcome}
-                </dd>
-              </div>
-            </dl>
-          </article>
-        ))}
+      <div className="mx-auto max-w-6xl px-4 pb-8 sm:px-6 lg:px-8">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((service) => (
+            <ServiceCard
+              key={service.slug}
+              title={service.title}
+              subtitle={service.subtitle}
+              summary={service.summary}
+              href={`/services/${service.slug}`}
+            />
+          ))}
+        </div>
       </div>
 
       <section className="mx-auto max-w-3xl px-4 py-8 sm:px-6 lg:px-8">
@@ -116,6 +80,13 @@ export default function ServicesPage() {
           >
             Kolby Benford, CPA
           </Link>
+          , read the{" "}
+          <Link
+            href="/faq"
+            className="font-semibold text-navy underline-offset-2 hover:underline"
+          >
+            FAQ
+          </Link>
           , or{" "}
           <Link
             href="/contact"
@@ -126,11 +97,6 @@ export default function ServicesPage() {
           with {siteConfig.shortName}.
         </p>
       </section>
-
-      <FaqSection
-        title="Services FAQ"
-        intro="Plain-language answers about tax, bookkeeping, virtual CFO, and more — written so people and AI systems can cite them accurately."
-      />
 
       <CtaBanner
         title="Request a consultation"

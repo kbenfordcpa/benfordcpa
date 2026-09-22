@@ -7,7 +7,7 @@ type FaqSectionProps = {
 
 export function FaqSection({
   title = "Frequently asked questions",
-  intro = "Clear answers for individuals and business owners considering a CPA in the Florence–Tuscumbia / Shoals area.",
+  intro = "Clear answers for individuals and business owners considering a CPA in the Shoals area.",
 }: FaqSectionProps) {
   return (
     <section

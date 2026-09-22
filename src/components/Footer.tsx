@@ -29,7 +29,7 @@ export function Footer() {
               </a>
             </li>
             <li className="text-cream/70">
-              Florence, Tuscumbia, Muscle Shoals &amp; the Shoals, AL
+              the Shoals, AL
             </li>
           </ul>
         </div>

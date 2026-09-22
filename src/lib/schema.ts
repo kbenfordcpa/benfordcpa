@@ -68,7 +68,7 @@ export function personJsonLd() {
     name: founder.name,
     jobTitle: "Certified Public Accountant",
     description:
-      "Licensed Alabama CPA (2022). Public accounting background with a focus on real estate taxation; Controller experience in the Florence area. Founder of Benford Consulting, LLC.",
+      "Licensed Alabama CPA (2022). Public accounting background with a focus on real estate taxation; Controller experience in the Shoals area. Founder of Benford Consulting, LLC.",
     worksFor: {
       "@type": "Organization",
       name,
