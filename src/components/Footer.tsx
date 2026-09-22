@@ -57,11 +57,26 @@ export function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <Link
+                href="/privacy"
+                className="text-cream/90 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+              >
+                Privacy Policy
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
       <div className="border-t border-cream/10 px-4 py-4 text-center text-xs text-cream/60 sm:px-6 lg:px-8">
         © {year} {siteConfig.name}. All rights reserved.
+        {" · "}
+        <Link
+          href="/privacy"
+          className="text-cream/60 underline-offset-2 hover:text-cream/90 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+        >
+          Privacy Policy
+        </Link>
       </div>
     </footer>
   );
