@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --navy: #1b2a4a;
+  --navy-800: #142038;
+  --charcoal: #2c2f36;
+  --cream: #f7f3eb;
+  --cream-dark: #ebe4d6;
+  --gold: #c4a35a;
+  --gold-light: #d4b872;
+  --gold-dark: #9a7d3a;
+  --background: var(--cream);
+  --foreground: var(--charcoal);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-navy: var(--navy);
+  --color-navy-800: var(--navy-800);
+  --color-charcoal: var(--charcoal);
+  --color-cream: var(--cream);
+  --color-cream-dark: var(--cream-dark);
+  --color-gold: var(--gold);
+  --color-gold-light: var(--gold-light);
+  --color-gold-dark: var(--gold-dark);
+  --font-sans: var(--font-source-sans);
+  --font-serif: var(--font-libre-baskerville);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+.font-serif {
+  font-family: var(--font-serif), Georgia, "Times New Roman", serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--gold) 35%, transparent);
+  color: var(--navy);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
