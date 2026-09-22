@@ -125,3 +125,36 @@ export function breadcrumbJsonLd(
     })),
   };
 }
+
+export function articleJsonLd(post: {
+  title: string;
+  description: string;
+  date: string;
+  author: string;
+  slug: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.description,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      "@type": "Person",
+      name: post.author,
+      url: `${url}/about`,
+    },
+    publisher: {
+      "@type": "Organization",
+      name,
+      url,
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${url}/blog/${post.slug}`,
+    },
+    url: `${url}/blog/${post.slug}`,
+  };
+}
+
