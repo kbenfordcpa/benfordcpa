@@ -87,7 +87,7 @@ src/app/           # Routes, layout, sitemap, robots
 src/components/    # Header, Footer, forms, FAQ, JSON-LD
 src/lib/site.ts    # Brand, services, FAQs (single source of truth)
 src/lib/schema.ts  # JSON-LD builders
-public/            # logo.svg, og-default.svg, llms.txt
+public/            # logo.png, og-default.svg, llms.txt
 NOTES.md           # SEO/GEO improvements vs Squarespace
 ```
 

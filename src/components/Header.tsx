@@ -17,16 +17,13 @@ export function Header() {
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/logo.svg"
-            alt="Benford Consulting logo"
-            width={40}
-            height={40}
+            src="/logo.png"
+            alt="Benford Consulting"
+            width={200}
+            height={54}
             priority
-            className="h-10 w-10"
+            className="h-9 w-auto sm:h-10"
           />
-          <span className="font-serif text-lg font-semibold tracking-tight text-navy sm:text-xl">
-            Benford Consulting
-          </span>
         </Link>
 
         <nav
