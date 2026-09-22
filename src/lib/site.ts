@@ -38,6 +38,7 @@ export const siteConfig = {
     { href: "/services", label: "Services" },
     { href: "/about", label: "About" },
     { href: "/blog", label: "Blog" },
+    { href: "/faq", label: "FAQ" },
     { href: "/contact", label: "Contact" },
   ] as const,
 } as const;
@@ -55,6 +56,13 @@ export const services = [
       "Individuals and business owners — especially those with rental properties, real estate investments, or complex returns — in the Florence–Tuscumbia / Shoals area and beyond.",
     outcome:
       "A clearer plan to reduce tax liability legally and avoid surprises at filing time.",
+    howItWorks: [
+      "Review your ownership structures, income sources, and real estate holdings.",
+      "Map year-round moves — timing, credits, and deductions — before filing season.",
+      "Leave you with a written plan you can act on and revisit as life changes.",
+    ],
+    detailParagraph:
+      "Tax planning at Benford Consulting is year-round strategy, not a once-a-year scramble. With a focus on real estate taxation, Kolby helps Shoals-area investors and owners structure ownership, time income and expenses, and use available credits so filing season brings fewer surprises.",
   },
   {
     slug: "virtual-cfo",
@@ -68,6 +76,13 @@ export const services = [
       "Growing businesses in the Shoals and surrounding Alabama markets that need leadership-level finance insight without a full-time CFO salary.",
     outcome:
       "Better visibility into the numbers that drive growth, with guidance you can act on.",
+    howItWorks: [
+      "Clarify the decisions and reports that matter most for your stage of growth.",
+      "Build cash-flow, KPI, and reporting rhythms on a part-time or project cadence.",
+      "Advise alongside your books so strategy stays grounded in clean numbers.",
+    ],
+    detailParagraph:
+      "Virtual CFO support gives growing Shoals businesses leadership-level finance insight — cash-flow planning, reporting, and KPI tracking — without a full-time hire. It pairs naturally with bookkeeping and tax work so owners have both clean books and forward-looking advice.",
   },
   {
     slug: "tax-preparation",
@@ -81,6 +96,13 @@ export const services = [
       "Individuals, families, and business owners who want reliable, compliant returns without the DIY stress.",
     outcome:
       "On-time filings you can stand behind, with fewer errors and clearer records for next year.",
+    howItWorks: [
+      "Gather personal and business documents and clarify filing goals.",
+      "Prepare and coordinate returns so individual and entity filings align.",
+      "File on time and leave clearer records for next year’s planning.",
+    ],
+    detailParagraph:
+      "Tax preparation covers individual and business returns with care so personal and entity filings work together. Clients across Florence, Tuscumbia, and the Shoals get on-time, compliant filings without DIY stress — and cleaner records for the year ahead.",
   },
   {
     slug: "accounting-system-setup",
@@ -94,6 +116,13 @@ export const services = [
       "New businesses, or established ones outgrowing spreadsheets or messy books.",
     outcome:
       "A system you can trust day to day — so reporting and tax prep start from clean data.",
+    howItWorks: [
+      "Learn how your business actually runs — not a one-size-fits-all chart.",
+      "Select, configure, and design accounts matched to your workflow.",
+      "Support go-live so reporting and tax prep start from clean data.",
+    ],
+    detailParagraph:
+      "Accounting system setup means selecting and configuring tools that match how your business operates — including chart-of-accounts design and go-live support. Ideal for new Shoals businesses or established ones outgrowing spreadsheets or messy books.",
   },
   {
     slug: "bookkeeping",
@@ -107,6 +136,13 @@ export const services = [
       "Business owners who need dependable books for decisions, lenders, and tax season — not just year-end catch-up.",
     outcome:
       "Current books you can read, share, and build tax and CFO work on top of.",
+    howItWorks: [
+      "Set a monthly or custom cadence for transactions and reconciliations.",
+      "Keep statements organized so you can read and share them anytime.",
+      "Hand off clean books that tax prep and virtual CFO work can build on.",
+    ],
+    detailParagraph:
+      "Bookkeeping keeps transactions recorded, accounts reconciled, and statements organized on a monthly or custom cadence. Shoals business owners get dependable books for decisions, lenders, and tax season — not just year-end catch-up.",
   },
   {
     slug: "ai-implementation",
@@ -120,8 +156,21 @@ export const services = [
       "Owners and finance teams ready to automate repetitive work while keeping human oversight on compliance-sensitive tasks.",
     outcome:
       "Less busywork, tighter processes, and more time for the decisions that matter.",
+    howItWorks: [
+      "Identify repetitive bookkeeping, reporting, or document steps worth automating.",
+      "Implement practical AI tools with human oversight on compliance-sensitive work.",
+      "Tighten processes so you spend less time on busywork and more on decisions.",
+    ],
+    detailParagraph:
+      "AI implementation focuses on practical tools in financial workflows — speeding bookkeeping, reporting, or document work without hype or risky shortcuts. Owners keep human oversight on compliance-sensitive tasks while cutting repetitive busywork.",
   },
 ] as const;
+
+export type Service = (typeof services)[number];
+
+export function getServiceBySlug(slug: string): Service | undefined {
+  return services.find((s) => s.slug === slug);
+}
 
 export const faqs = [
   {
