@@ -10,12 +10,12 @@ export const metadata: Metadata = {
     absolute: "Contact Benford Consulting | CPA Serving the Shoals, AL",
   },
   description:
-    "Request a consultation with Benford Consulting for tax, bookkeeping, or financial guidance. Serving individuals and business owners in Florence, Tuscumbia, and the Shoals.",
+    "Request a consultation with Benford Consulting for tax, bookkeeping, or financial guidance. Serving individuals and business owners in the Shoals area.",
   alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact Benford Consulting | CPA Serving the Shoals, AL",
     description:
-      "Request a consultation with Benford Consulting for tax, bookkeeping, or financial guidance. Serving Florence, Tuscumbia, and the Shoals.",
+      "Request a consultation with Benford Consulting for tax, bookkeeping, or financial guidance. Serving the Shoals area.",
     url: "/contact",
   },
 };
@@ -41,8 +41,7 @@ export default function ContactPage() {
           <p className="mt-4 max-w-2xl text-cream/85">
             Tell us about your tax, bookkeeping, virtual CFO, or broader
             financial guidance needs. {siteConfig.shortName} serves individuals
-            and business owners in Florence, Tuscumbia, Muscle Shoals, and across
-            the Shoals of Alabama.
+            and business owners across the Shoals area of Alabama.
           </p>
         </div>
       </section>

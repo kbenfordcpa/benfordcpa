@@ -24,7 +24,7 @@ export async function generateMetadata({
   }
 
   const title = `${service.title} | CPA in the Shoals, AL | Benford Consulting`;
-  const description = `${service.summary} Serving Florence, Tuscumbia, Muscle Shoals, and the Shoals area.`;
+  const description = `${service.summary} Serving the Shoals area.`;
 
   return {
     title: { absolute: title },
@@ -143,7 +143,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
       <CtaBanner
         title={`Interested in ${service.title}?`}
-        body={`Request a consultation with ${siteConfig.shortName}. Serving individuals and business owners across Florence, Tuscumbia, and the Shoals.`}
+        body={`Request a consultation with ${siteConfig.shortName}. Serving individuals and business owners across the Shoals area.`}
       />
     </>
   );

@@ -8,13 +8,13 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "FAQ | Benford Consulting CPA — Florence–Tuscumbia / Shoals, AL",
+    absolute: "FAQ | Benford Consulting CPA — the Shoals, AL",
   },
   description:
     "Answers about tax planning, bookkeeping, virtual CFO services, CPA credentials, and consultations with Benford Consulting in the Shoals, Alabama.",
   alternates: { canonical: "/faq" },
   openGraph: {
-    title: "FAQ | Benford Consulting CPA — Florence–Tuscumbia / Shoals, AL",
+    title: "FAQ | Benford Consulting CPA — the Shoals, AL",
     description:
       "Answers about tax planning, bookkeeping, virtual CFO services, CPA credentials, and consultations in the Shoals, Alabama.",
     url: "/faq",
@@ -42,8 +42,7 @@ export default function FaqPage() {
           </h1>
           <p className="mt-4 max-w-2xl text-cream/85">
             Plain-language answers for individuals and business owners
-            considering a CPA in Florence, Tuscumbia, Muscle Shoals, and across
-            the Shoals — from {siteConfig.shortName}.
+            considering a CPA in the Shoals area — from {siteConfig.shortName}.
           </p>
         </div>
       </section>

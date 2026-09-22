@@ -40,8 +40,8 @@ export default function ServicesPage() {
             Financial services rooted in stewardship
           </h1>
           <p className="mt-4 max-w-2xl text-cream/85">
-            Six focused services to help individuals and business owners in
-            Florence, Tuscumbia, Muscle Shoals, and across the Shoals manage
+            Six focused services to help individuals and business owners in the
+            Shoals area manage
             their finances with wisdom, clarity, and integrity — from everyday
             tax needs to strategic financial leadership.
           </p>

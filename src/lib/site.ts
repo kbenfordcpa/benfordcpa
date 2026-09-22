@@ -15,7 +15,7 @@ export const siteConfig = {
   // phone: TBD — not published on live site; do not invent
   // streetAddress: TBD — not published on live site; do not invent
   serviceArea: {
-    label: "Florence–Tuscumbia / Shoals, Alabama",
+    label: "the Shoals, Alabama",
     cities: [
       "Florence",
       "Tuscumbia",
@@ -53,7 +53,7 @@ export const services = [
     whatItIs:
       "Year-round tax strategy that looks ahead of filing season — structuring ownership, timing income and expenses, and using available credits and deductions.",
     whoItsFor:
-      "Individuals and business owners — especially those with rental properties, real estate investments, or complex returns — in the Florence–Tuscumbia / Shoals area and beyond.",
+      "Individuals and business owners — especially those with rental properties, real estate investments, or complex returns — in the Shoals area and beyond.",
     outcome:
       "A clearer plan to reduce tax liability legally and avoid surprises at filing time.",
     howItWorks: [
@@ -102,7 +102,7 @@ export const services = [
       "File on time and leave clearer records for next year’s planning.",
     ],
     detailParagraph:
-      "Tax preparation covers individual and business returns with care so personal and entity filings work together. Clients across Florence, Tuscumbia, and the Shoals get on-time, compliant filings without DIY stress — and cleaner records for the year ahead.",
+      "Tax preparation covers individual and business returns with care so personal and entity filings work together. Clients across the Shoals area get on-time, compliant filings without DIY stress — and cleaner records for the year ahead.",
   },
   {
     slug: "accounting-system-setup",
@@ -176,17 +176,17 @@ export const faqs = [
   {
     question: "What services does Benford Consulting offer?",
     answer:
-      "Benford Consulting provides tax planning (including real estate taxation), tax preparation for individuals and businesses, bookkeeping, accounting system setup, virtual CFO services, and practical AI implementation for financial workflows. The firm serves individuals and business owners in the Florence–Tuscumbia / Shoals, Alabama area.",
+      "Benford Consulting provides tax planning (including real estate taxation), tax preparation for individuals and businesses, bookkeeping, accounting system setup, virtual CFO services, and practical AI implementation for financial workflows. The firm serves individuals and business owners in the Shoals, Alabama area.",
   },
   {
     question: "Where is Benford Consulting located?",
     answer:
-      "Benford Consulting, LLC serves the Florence–Tuscumbia / Shoals region of Alabama, including Florence, Tuscumbia, Muscle Shoals, and surrounding communities. Consultations can be arranged by email.",
+      "Benford Consulting, LLC serves the Shoals area of Alabama. Consultations can be arranged by email.",
   },
   {
     question: "Is Kolby Benford a licensed CPA?",
     answer:
-      "Yes. Kolby Benford is a licensed Certified Public Accountant in Alabama, earning his CPA certification in 2022. He has a background in public accounting and has served as Controller for an insurance agency in the Florence area.",
+      "Yes. Kolby Benford is a licensed Certified Public Accountant in Alabama, earning his CPA certification in 2022. He has a background in public accounting and has served as Controller for an insurance agency in the Shoals area.",
   },
   {
     question: "Do you specialize in real estate taxation?",

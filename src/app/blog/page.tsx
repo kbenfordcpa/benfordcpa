@@ -11,12 +11,12 @@ export const metadata: Metadata = {
     absolute: "Blog | Benford Consulting CPA — Shoals, AL",
   },
   description:
-    "Practical tax, bookkeeping, and stewardship insights for small businesses and individuals in Florence, Tuscumbia, Muscle Shoals, and the Shoals area.",
+    "Practical tax, bookkeeping, and stewardship insights for small businesses and individuals in the Shoals area.",
   alternates: { canonical: "/blog" },
   openGraph: {
     title: "Blog | Benford Consulting CPA — Shoals, AL",
     description:
-      "Practical tax, bookkeeping, and stewardship insights for Florence–Tuscumbia / Shoals small businesses and individuals.",
+      "Practical tax, bookkeeping, and stewardship insights for Shoals-area small businesses and individuals.",
     url: "/blog",
   },
 };
@@ -53,8 +53,8 @@ export default function BlogIndexPage() {
           </h1>
           <p className="mt-4 max-w-2xl text-cream/85">
             Practical notes on tax, bookkeeping, and financial clarity for
-            individuals and business owners in Florence, Tuscumbia, Muscle
-            Shoals, and across the Shoals — from {siteConfig.shortName}.
+            individuals and business owners in the Shoals area — from{" "}
+            {siteConfig.shortName}.
           </p>
         </div>
       </section>

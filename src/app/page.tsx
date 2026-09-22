@@ -7,15 +7,15 @@ import { faqs, scriptureQuote, services, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "CPA in Florence & Tuscumbia, AL | Benford Consulting",
+    absolute: "CPA in the Shoals, AL | Benford Consulting",
   },
   description:
-    "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance across the Florence–Tuscumbia / Shoals area. Faithful stewardship. Sound advice.",
+    "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance across the Shoals area. Faithful stewardship. Sound advice.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "CPA in Florence & Tuscumbia, AL | Benford Consulting",
+    title: "CPA in the Shoals, AL | Benford Consulting",
     description:
-      "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance across the Florence–Tuscumbia / Shoals area.",
+      "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance across the Shoals area.",
     url: "/",
   },
 };
@@ -37,7 +37,7 @@ const howItWorksSteps = [
   },
   {
     title: "Clarify goals",
-    body: "A consultation focused on your situation in Florence, Tuscumbia, or across the Shoals.",
+    body: "A consultation focused on your situation in the Shoals area.",
   },
   {
     title: "Move forward",
@@ -54,7 +54,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden bg-navy text-cream">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-widest text-gold">
-            Alabama CPA · Florence–Tuscumbia / Shoals
+            Alabama CPA · the Shoals
           </p>
           <h1 className="mt-4 max-w-3xl font-serif text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
             {siteConfig.tagline}
@@ -63,7 +63,7 @@ export default function HomePage() {
             {siteConfig.description} Benford Consulting is a licensed CPA
             practice helping individuals and business owners across{" "}
             <strong className="font-semibold text-cream">
-              Florence, Tuscumbia, Muscle Shoals, and the Shoals of Alabama
+              the Shoals area of Alabama
             </strong>{" "}
             with tax, bookkeeping, and sound financial guidance.
           </p>
@@ -130,8 +130,7 @@ export default function HomePage() {
               Who we serve
             </h2>
             <p className="mt-2 text-sm text-charcoal/80 leading-relaxed">
-              Individuals and business owners in Florence, Tuscumbia, Muscle
-              Shoals, and the wider Shoals area —{" "}
+              Individuals and business owners in the Shoals area —{" "}
               <Link
                 href="/contact"
                 className="font-medium text-navy underline-offset-2 hover:underline"

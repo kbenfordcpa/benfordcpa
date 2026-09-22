@@ -27,22 +27,22 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "CPA in Florence & Tuscumbia, AL | Benford Consulting",
+    default: "CPA in the Shoals, AL | Benford Consulting",
     template: "%s | Benford Consulting",
   },
   description:
-    "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance across the Florence–Tuscumbia / Shoals area. Faithful stewardship. Sound advice.",
+    "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance across the Shoals area. Faithful stewardship. Sound advice.",
   applicationName: siteConfig.name,
   authors: [{ name: siteConfig.founder.name, url: `${siteConfig.url}/about` }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
   keywords: [
-    "CPA Florence AL",
-    "CPA Tuscumbia",
+    "CPA Shoals AL",
+    "Shoals area CPA",
     "Shoals CPA",
     "Alabama CPA",
-    "tax planning Florence",
-    "bookkeeping Muscle Shoals",
+    "tax planning the Shoals",
+    "bookkeeping the Shoals",
     "virtual CFO Alabama",
     "real estate tax CPA",
     "Benford Consulting",
@@ -56,9 +56,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "CPA in Florence & Tuscumbia, AL | Benford Consulting",
+    title: "CPA in the Shoals, AL | Benford Consulting",
     description:
-      "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance across the Florence–Tuscumbia / Shoals area.",
+      "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance across the Shoals area.",
     images: [
       {
         url: "/og-default.svg",
@@ -70,9 +70,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CPA in Florence & Tuscumbia, AL | Benford Consulting",
+    title: "CPA in the Shoals, AL | Benford Consulting",
     description:
-      "Tax, bookkeeping, and financial guidance for the Florence–Tuscumbia / Shoals, Alabama area.",
+      "Tax, bookkeeping, and financial guidance for the Shoals, Alabama.",
     images: ["/og-default.svg"],
   },
   robots: {
