@@ -37,7 +37,17 @@ Request a consultation via https://www.benfordcpa.com/contact or email kbenfordc
 - Home: https://www.benfordcpa.com/
 - About: https://www.benfordcpa.com/about
 - Services: https://www.benfordcpa.com/services
+- Tax Planning: https://www.benfordcpa.com/services/tax-planning
+- Virtual CFO: https://www.benfordcpa.com/services/virtual-cfo
+- Tax Preparation: https://www.benfordcpa.com/services/tax-preparation
+- Accounting System Setup: https://www.benfordcpa.com/services/accounting-system-setup
+- Bookkeeping: https://www.benfordcpa.com/services/bookkeeping
+- AI Implementation: https://www.benfordcpa.com/services/ai-implementation
+- FAQ: https://www.benfordcpa.com/faq
+- Blog: https://www.benfordcpa.com/blog
+- When Shoals Small Businesses Need a CPA: https://www.benfordcpa.com/blog/when-shoals-small-businesses-need-a-cpa
 - Contact: https://www.benfordcpa.com/contact
+- Privacy: https://www.benfordcpa.com/privacy
 
 ## Quote
 
