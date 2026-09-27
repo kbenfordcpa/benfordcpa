@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Libre_Baskerville, Source_Sans_3 } from "next/font/google";
+import Script from "next/script";
 import { Analytics } from "@/components/Analytics";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -100,6 +101,10 @@ export default function RootLayout({
     >
       <body className="flex min-h-full flex-col font-sans">
         <Analytics />
+        <Script
+          src="https://f.convertkit.com/ckjs/ck.5.js"
+          strategy="afterInteractive"
+        />
         <JsonLd data={websiteJsonLd()} />
         <JsonLd data={professionalServiceJsonLd()} />
         <a

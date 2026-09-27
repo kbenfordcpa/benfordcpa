@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Script from "next/script";
 import { useEffect, useId, useRef } from "react";
 
 const KIT_FORM_ID = "9968410";
@@ -88,13 +87,14 @@ export function NewsletterSignup({
     const observer = new MutationObserver(releaseSuccessId);
     observer.observe(form, { childList: true, subtree: true });
 
+    if (!isTracked(form)) void reloadKitScript();
+
     const interval = window.setInterval(() => {
       if (cancelled || !formRef.current) return;
       if (isTracked(formRef.current)) {
         window.clearInterval(interval);
         return;
       }
-      if (!trackedForms()) return;
       void reloadKitScript();
     }, 400);
 
@@ -138,7 +138,6 @@ export function NewsletterSignup({
       aria-labelledby={headingId}
       className={sectionClass || undefined}
     >
-      <Script src={KIT_SCRIPT_SRC} strategy="afterInteractive" />
       <div className={isFooter ? "md:flex md:items-end md:justify-between md:gap-10" : undefined}>
         <div className={isFooter ? "md:max-w-md md:shrink-0" : undefined}>
           <h2
