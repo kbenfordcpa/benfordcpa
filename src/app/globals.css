@@ -148,7 +148,8 @@ textarea:focus-visible {
   color: var(--cream);
 }
 
-.newsletter-signup[data-variant="panel"] .formkit-alert-success {
+.newsletter-signup[data-variant="panel"] .formkit-alert-success,
+.newsletter-signup[data-variant="plain"] .formkit-alert-success {
   border: 1px solid color-mix(in srgb, var(--gold) 45%, transparent);
   background: color-mix(in srgb, var(--gold) 18%, white);
   color: var(--navy);

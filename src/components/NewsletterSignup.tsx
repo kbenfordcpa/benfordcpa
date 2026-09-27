@@ -26,8 +26,9 @@ const KIT_OPTIONS = JSON.stringify({
 type KitTrackedForm = { element: HTMLFormElement };
 
 type NewsletterSignupProps = {
-  variant?: "footer" | "panel";
+  variant?: "footer" | "panel" | "plain";
   className?: string;
+  headingId?: string;
 };
 
 function trackedForms(): KitTrackedForm[] | undefined {
@@ -65,10 +66,11 @@ function reloadKitScript(): Promise<void> {
 export function NewsletterSignup({
   variant = "panel",
   className,
+  headingId: headingIdProp,
 }: NewsletterSignupProps) {
   const formRef = useRef<HTMLFormElement>(null);
   const reactId = useId();
-  const headingId = `${reactId}-heading`;
+  const headingId = headingIdProp ?? `${reactId}-heading`;
   const emailId = `${reactId}-email`;
   const nameId = `${reactId}-first-name`;
   const isFooter = variant === "footer";
@@ -125,9 +127,9 @@ export function NewsletterSignup({
     : "font-medium text-navy underline-offset-2 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold";
 
   const sectionClass = [
-    isFooter
-      ? undefined
-      : "rounded-xl border border-navy/10 bg-white p-6 shadow-sm sm:p-8",
+    variant === "panel"
+      ? "rounded-xl border border-navy/10 bg-white p-6 shadow-sm sm:p-8"
+      : undefined,
     className,
   ]
     .filter(Boolean)

@@ -4,6 +4,7 @@ import Script from "next/script";
 import { Analytics } from "@/components/Analytics";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
+import { InsightsLauncher } from "@/components/InsightsLauncher";
 import { JsonLd } from "@/components/JsonLd";
 import {
   professionalServiceJsonLd,
@@ -118,6 +119,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <InsightsLauncher />
       </body>
     </html>
   );
