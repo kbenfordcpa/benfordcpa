@@ -6,7 +6,7 @@ import { siteConfig } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Privacy Policy | Benford Consulting, LLC",
   description:
-    "How Benford Consulting, LLC collects and uses information on www.benfordcpa.com — contact forms, Google Analytics, Microsoft Clarity, cookies, and your choices.",
+    "How Benford Consulting, LLC collects and uses information on www.benfordcpa.com — contact forms, the mailing list, Google Analytics, Microsoft Clarity, cookies, and your choices.",
   alternates: { canonical: "/privacy" },
   openGraph: {
     title: "Privacy Policy | Benford Consulting, LLC",
@@ -38,7 +38,7 @@ export default function PrivacyPage() {
             Privacy Policy
           </h1>
           <p className="mt-4 max-w-2xl text-cream/85">
-            {siteConfig.name} — last updated September 22, 2026
+            {siteConfig.name} — last updated September 27, 2026
           </p>
         </div>
       </section>
@@ -66,6 +66,11 @@ export default function PrivacyPage() {
             name, email address, and message. We use that information only to
             respond to your inquiry and to provide CPA and related services you
             request. We do not sell your personal information.
+          </p>
+          <p className="mt-4 leading-relaxed text-charcoal/85">
+            If you join the mailing list, we send the email address and optional
+            first name you submit to Kit so we can email occasional notes. You
+            can unsubscribe at any time.
           </p>
         </section>
 
