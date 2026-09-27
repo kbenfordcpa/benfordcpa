@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CtaBanner } from "@/components/CtaBanner";
 import { JsonLd } from "@/components/JsonLd";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { getAllPosts } from "@/lib/blog";
 import { breadcrumbJsonLd } from "@/lib/schema";
 import { siteConfig } from "@/lib/site";
@@ -119,6 +120,8 @@ export default function BlogIndexPage() {
             ))}
           </ul>
         )}
+
+        <NewsletterSignup className="mt-10" />
       </div>
 
       <CtaBanner

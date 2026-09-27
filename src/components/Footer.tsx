@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { siteConfig } from "@/lib/site";
 
 export function Footer() {
@@ -6,6 +7,11 @@ export function Footer() {
 
   return (
     <footer className="mt-auto border-t border-navy-800/10 bg-navy text-cream">
+      <div className="border-b border-cream/10">
+        <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
+          <NewsletterSignup variant="footer" />
+        </div>
+      </div>
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3 lg:px-8">
         <div>
           <p className="font-serif text-xl font-semibold">{siteConfig.name}</p>
