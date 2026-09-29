@@ -7,17 +7,17 @@ import { ClientPortalLink } from "@/components/ClientPortalLink";
 import { siteConfig } from "@/lib/site";
 
 const clientPortalButtonClassName =
-  "rounded-md bg-gold px-4 text-center text-sm font-semibold text-navy shadow-sm transition-colors hover:bg-gold-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold";
+  "whitespace-nowrap rounded-md bg-gold text-center font-semibold text-navy shadow-sm transition-colors hover:bg-gold-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold";
 
 export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-navy-800/10 bg-cream/95 backdrop-blur-sm">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
+      <div className="mx-auto flex max-w-6xl items-center gap-2 px-3 py-3 sm:gap-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="flex items-center gap-3 rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+          className="flex shrink-0 items-center gap-3 rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
           onClick={() => setOpen(false)}
         >
           <Image
@@ -26,12 +26,16 @@ export function Header() {
             width={200}
             height={54}
             priority
-            className="h-9 w-auto sm:h-10"
+            className="h-8 w-auto sm:h-10"
           />
         </Link>
 
+        <ClientPortalLink
+          className={`${clientPortalButtonClassName} inline-flex shrink-0 items-center justify-center px-3 py-2 text-sm sm:px-4`}
+        />
+
         <nav
-          className="hidden items-center gap-6 lg:flex"
+          className="ml-auto hidden items-center gap-6 lg:flex"
           aria-label="Primary"
         >
           {siteConfig.nav.map((item) => (
@@ -43,7 +47,6 @@ export function Header() {
               {item.label}
             </Link>
           ))}
-          <ClientPortalLink className={`${clientPortalButtonClassName} py-2`} />
           <Link
             href="/contact"
             className="rounded-md bg-navy px-4 py-2 text-sm font-semibold text-cream shadow-sm transition-colors hover:bg-navy-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
@@ -54,7 +57,7 @@ export function Header() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md p-2 text-navy lg:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+          className="ml-auto inline-flex shrink-0 items-center justify-center rounded-md p-2 text-navy lg:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
           aria-expanded={open}
           aria-controls="mobile-nav"
           onClick={() => setOpen((v) => !v)}
@@ -92,7 +95,7 @@ export function Header() {
             ))}
             <li>
               <ClientPortalLink
-                className={`mt-1 block ${clientPortalButtonClassName} py-2.5`}
+                className={`mt-1 block w-full px-4 py-2.5 text-sm ${clientPortalButtonClassName}`}
                 onClick={() => setOpen(false)}
               />
             </li>
