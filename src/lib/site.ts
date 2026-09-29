@@ -41,6 +41,10 @@ export const siteConfig = {
     { href: "/faq", label: "FAQ" },
     { href: "/contact", label: "Contact" },
   ] as const,
+  clientPortal: {
+    label: "Client Portal",
+    href: "https://app.financial-cents.com/client-portal",
+  } as const,
 } as const;
 
 export const services = [
