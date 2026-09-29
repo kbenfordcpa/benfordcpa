@@ -3,7 +3,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { ClientPortalLink } from "@/components/ClientPortalLink";
 import { siteConfig } from "@/lib/site";
+
+const clientPortalButtonClassName =
+  "rounded-md bg-gold px-4 text-center text-sm font-semibold text-navy shadow-sm transition-colors hover:bg-gold-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold";
 
 export function Header() {
   const [open, setOpen] = useState(false);
@@ -27,7 +31,7 @@ export function Header() {
         </Link>
 
         <nav
-          className="hidden items-center gap-8 md:flex"
+          className="hidden items-center gap-6 lg:flex"
           aria-label="Primary"
         >
           {siteConfig.nav.map((item) => (
@@ -39,6 +43,7 @@ export function Header() {
               {item.label}
             </Link>
           ))}
+          <ClientPortalLink className={`${clientPortalButtonClassName} py-2`} />
           <Link
             href="/contact"
             className="rounded-md bg-navy px-4 py-2 text-sm font-semibold text-cream shadow-sm transition-colors hover:bg-navy-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
@@ -49,7 +54,7 @@ export function Header() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-md p-2 text-navy md:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+          className="inline-flex items-center justify-center rounded-md p-2 text-navy lg:hidden focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
           aria-expanded={open}
           aria-controls="mobile-nav"
           onClick={() => setOpen((v) => !v)}
@@ -70,7 +75,7 @@ export function Header() {
       {open && (
         <nav
           id="mobile-nav"
-          className="border-t border-navy-800/10 bg-cream px-4 py-4 md:hidden"
+          className="border-t border-navy-800/10 bg-cream px-4 py-4 lg:hidden"
           aria-label="Mobile"
         >
           <ul className="flex flex-col gap-3">
@@ -86,9 +91,15 @@ export function Header() {
               </li>
             ))}
             <li>
+              <ClientPortalLink
+                className={`mt-1 block ${clientPortalButtonClassName} py-2.5`}
+                onClick={() => setOpen(false)}
+              />
+            </li>
+            <li>
               <Link
                 href="/contact"
-                className="mt-1 block rounded-md bg-navy px-4 py-2.5 text-center text-sm font-semibold text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+                className="block rounded-md bg-navy px-4 py-2.5 text-center text-sm font-semibold text-cream focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
                 onClick={() => setOpen(false)}
               >
                 Request Consultation

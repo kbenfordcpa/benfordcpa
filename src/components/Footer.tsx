@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { ClientPortalLink } from "@/components/ClientPortalLink";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { siteConfig } from "@/lib/site";
 
@@ -45,6 +46,9 @@ export function Footer() {
             Explore
           </p>
           <ul className="mt-3 space-y-2 text-sm">
+            <li>
+              <ClientPortalLink className="font-semibold text-gold underline-offset-2 hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold" />
+            </li>
             <li>
               <Link
                 href="/"
