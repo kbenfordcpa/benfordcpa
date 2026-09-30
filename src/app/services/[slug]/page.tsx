@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CtaBanner } from "@/components/CtaBanner";
 import { JsonLd } from "@/components/JsonLd";
-import { breadcrumbJsonLd } from "@/lib/schema";
+import { breadcrumbJsonLd, serviceJsonLd } from "@/lib/schema";
 import { getServiceBySlug, services, siteConfig } from "@/lib/site";
 
 type PageProps = {
@@ -54,6 +54,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
           { name: service.title, path: `/services/${service.slug}` },
         ])}
       />
+      <JsonLd data={serviceJsonLd(service)} />
 
       <section className="bg-navy text-cream">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
