@@ -126,6 +126,38 @@ export function breadcrumbJsonLd(
   };
 }
 
+export function serviceJsonLd(service: {
+  slug: string;
+  title: string;
+  summary: string;
+  detailParagraph?: string;
+}) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: service.title,
+    description: service.summary || service.detailParagraph,
+    serviceType: service.title,
+    url: `${url}/services/${service.slug}`,
+    provider: {
+      "@type": "Organization",
+      name,
+      url,
+      email,
+    },
+    areaServed: serviceArea.cities.map((city) => ({
+      "@type": "City",
+      name: city,
+      containedInPlace: {
+        "@type": "State",
+        name: "Alabama",
+        addressCountry: "US",
+      },
+    })),
+    // telephone / streetAddress omitted until verified NAP exists
+  };
+}
+
 export function articleJsonLd(post: {
   title: string;
   description: string;
