@@ -4,7 +4,7 @@ description: "Plain-language look at virtual CFO work for growing Shoals busines
 date: "2026-10-06"
 author: "Kolby Benford, CPA"
 slug: "what-a-virtual-cfo-actually-does-for-growing-shoals-businesses"
-draft: true
+draft: false
 ---
 For many business owners in the Shoals area, finance is still a personal system. You watch the bank balance, pay what is due, send documents to a tax preparer in the spring, and get back to the work that built the business. That rhythm can last for years.
 
