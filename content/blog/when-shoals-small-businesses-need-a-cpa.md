@@ -5,6 +5,10 @@ date: "2026-09-22"
 author: "Kolby Benford, CPA"
 slug: "when-shoals-small-businesses-need-a-cpa"
 draft: false
+relatedServices:
+  - tax-preparation
+  - bookkeeping
+  - tax-planning
 ---
 Running a business in the Shoals means wearing a lot of hats. You close sales, manage people, chase invoices, and still try to keep an eye on the numbers. For a while, spreadsheets, a bookkeeping app, and a once-a-year tax preparer can feel like enough.
 

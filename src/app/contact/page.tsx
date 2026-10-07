@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ContactForm } from "@/components/ContactForm";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbJsonLd } from "@/lib/schema";
+import { openGraphWithDefault } from "@/lib/og";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -12,12 +13,12 @@ export const metadata: Metadata = {
   description:
     "Request a consultation with Benford Consulting for tax, bookkeeping, or financial guidance. Serving individuals and business owners in the Shoals area.",
   alternates: { canonical: "/contact" },
-  openGraph: {
+  openGraph: openGraphWithDefault({
     title: "Contact Benford Consulting | CPA Serving the Shoals, AL",
     description:
       "Request a consultation with Benford Consulting for tax, bookkeeping, or financial guidance. Serving the Shoals area.",
     url: "/contact",
-  },
+  }),
 };
 
 export default function ContactPage() {

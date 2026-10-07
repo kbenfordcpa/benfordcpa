@@ -5,6 +5,11 @@ date: "2026-09-28"
 author: "Kolby Benford, CPA"
 slug: "year-round-tax-planning-for-shoals-business-owners"
 draft: false
+relatedServices:
+  - tax-planning
+  - tax-preparation
+  - bookkeeping
+  - accounting-system-setup
 ---
 For many business owners in the Shoals area, tax season still feels like a sprint in March and April: gather documents, answer a few questions, sign, and move on. That rhythm can work for a simple return. It rarely works well for a growing business.
 

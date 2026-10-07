@@ -4,6 +4,7 @@ import { CtaBanner } from "@/components/CtaBanner";
 import { JsonLd } from "@/components/JsonLd";
 import { ServiceCard } from "@/components/ServiceCard";
 import { breadcrumbJsonLd } from "@/lib/schema";
+import { openGraphWithDefault } from "@/lib/og";
 import { scriptureQuote, services, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -13,12 +14,12 @@ export const metadata: Metadata = {
   description:
     "Tax planning (including real estate), tax prep, bookkeeping, accounting setup, virtual CFO, and practical AI tools — for individuals and businesses in the Shoals, AL area.",
   alternates: { canonical: "/services" },
-  openGraph: {
+  openGraph: openGraphWithDefault({
     title: "Tax, Bookkeeping & Virtual CFO | Benford Consulting CPA",
     description:
       "Tax planning (including real estate), tax prep, bookkeeping, accounting setup, virtual CFO, and practical AI tools — for individuals and businesses in the Shoals, AL area.",
     url: "/services",
-  },
+  }),
 };
 
 export default function ServicesPage() {

@@ -5,6 +5,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { NewsletterSignup } from "@/components/NewsletterSignup";
 import { getAllPosts } from "@/lib/blog";
 import { breadcrumbJsonLd } from "@/lib/schema";
+import { openGraphWithDefault } from "@/lib/og";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -14,12 +15,12 @@ export const metadata: Metadata = {
   description:
     "Practical tax, bookkeeping, and stewardship insights for small businesses and individuals in the Shoals area.",
   alternates: { canonical: "/blog" },
-  openGraph: {
+  openGraph: openGraphWithDefault({
     title: "Blog | Benford Consulting CPA — Shoals, AL",
     description:
       "Practical tax, bookkeeping, and stewardship insights for Shoals-area small businesses and individuals.",
     url: "/blog",
-  },
+  }),
 };
 
 function formatDate(iso: string): string {

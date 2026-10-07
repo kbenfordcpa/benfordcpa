@@ -2,10 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CtaBanner } from "@/components/CtaBanner";
+import { RelatedLinks } from "@/components/RelatedLinks";
 import { JsonLd } from "@/components/JsonLd";
 import { getPost, getPublishedSlugs } from "@/lib/blog";
+import { openGraphWithDefault } from "@/lib/og";
 import { articleJsonLd, breadcrumbJsonLd } from "@/lib/schema";
-import { siteConfig } from "@/lib/site";
+import { getServiceBySlug, siteConfig } from "@/lib/site";
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -30,14 +32,14 @@ export async function generateMetadata({
     },
     description: post.description,
     alternates: { canonical: `/blog/${post.slug}` },
-    openGraph: {
+    openGraph: openGraphWithDefault({
       type: "article",
       title: post.title,
       description: post.description,
       url: `/blog/${post.slug}`,
       publishedTime: post.date,
       authors: [post.author],
-    },
+    }),
   };
 }
 
@@ -90,6 +92,20 @@ export default async function BlogPostPage({ params }: PageProps) {
         <div
           className="blog-prose"
           dangerouslySetInnerHTML={{ __html: post.contentHtml }}
+        />
+
+        <RelatedLinks
+          heading="Related services"
+          links={post.relatedServices.flatMap((serviceSlug) => {
+            const service = getServiceBySlug(serviceSlug);
+            if (!service) return [];
+            return [
+              {
+                href: `/services/${service.slug}`,
+                label: service.title,
+              },
+            ];
+          })}
         />
 
         <aside className="mt-12 rounded-xl border border-navy/10 bg-white p-6 shadow-sm">

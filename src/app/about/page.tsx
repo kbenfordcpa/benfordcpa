@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CtaBanner } from "@/components/CtaBanner";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbJsonLd, personJsonLd } from "@/lib/schema";
+import { openGraphWithDefault } from "@/lib/og";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -12,12 +13,12 @@ export const metadata: Metadata = {
   description:
     "Meet Kolby Benford, licensed Alabama CPA — Air Force veteran, public accounting background, and Controller in the Shoals area. Stewardship-minded guidance for your finances.",
   alternates: { canonical: "/about" },
-  openGraph: {
+  openGraph: openGraphWithDefault({
     title: "About Kolby Benford, CPA | the Shoals, AL",
     description:
       "Meet Kolby Benford, licensed Alabama CPA — Air Force veteran, public accounting background, and Controller in the Shoals area.",
     url: "/about",
-  },
+  }),
 };
 
 export default function AboutPage() {

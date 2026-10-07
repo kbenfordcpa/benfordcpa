@@ -3,8 +3,13 @@ import path from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import { services, type Service } from "@/lib/site";
 
 const BLOG_DIR = path.join(process.cwd(), "content/blog");
+
+const serviceSlugs = new Set<string>(services.map((service) => service.slug));
+
+export type ServiceSlug = Service["slug"];
 
 export type BlogPostMeta = {
   title: string;
@@ -13,6 +18,12 @@ export type BlogPostMeta = {
   author: string;
   slug: string;
   draft: boolean;
+  /**
+   * Service slugs this post discusses. Tag future posts in front matter:
+   * `relatedServices: [tax-planning, bookkeeping]`.
+   * Service pages list posts that include their slug.
+   */
+  relatedServices: ServiceSlug[];
 };
 
 export type BlogPost = BlogPostMeta & {
@@ -47,9 +58,40 @@ function parseFile(filename: string): BlogPost {
     author: String(data.author ?? ""),
     slug,
     draft: Boolean(data.draft),
+    relatedServices: parseRelatedServices(data.relatedServices, slug),
     content,
     contentHtml: "",
   };
+}
+
+function parseRelatedServices(value: unknown, slug: string): ServiceSlug[] {
+  if (value == null) return [];
+  if (!Array.isArray(value)) {
+    throw new Error(
+      `Blog post "${slug}": relatedServices must be a YAML list of service slugs.`,
+    );
+  }
+
+  const seen = new Set<string>();
+  const slugs: ServiceSlug[] = [];
+
+  for (const item of value) {
+    if (typeof item !== "string" || item.length === 0) {
+      throw new Error(
+        `Blog post "${slug}": relatedServices entries must be service slug strings.`,
+      );
+    }
+    if (!serviceSlugs.has(item)) {
+      throw new Error(
+        `Blog post "${slug}": unknown relatedServices slug "${item}".`,
+      );
+    }
+    if (seen.has(item)) continue;
+    seen.add(item);
+    slugs.push(item as ServiceSlug);
+  }
+
+  return slugs;
 }
 
 async function renderMarkdown(markdown: string): Promise<string> {
@@ -99,4 +141,11 @@ export async function getPost(
 
 export function getPublishedSlugs(): string[] {
   return getAllPosts().map((p) => p.slug);
+}
+
+/** Published posts that list this service, newest first. */
+export function getPostsForService(serviceSlug: string): BlogPostMeta[] {
+  return getAllPosts().filter((post) =>
+    post.relatedServices.includes(serviceSlug as ServiceSlug),
+  );
 }

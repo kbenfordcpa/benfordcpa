@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CtaBanner } from "@/components/CtaBanner";
+import { RelatedLinks } from "@/components/RelatedLinks";
 import { JsonLd } from "@/components/JsonLd";
+import { getPostsForService } from "@/lib/blog";
+import { openGraphWithDefault } from "@/lib/og";
 import { breadcrumbJsonLd, serviceJsonLd } from "@/lib/schema";
 import { getServiceBySlug, services, siteConfig } from "@/lib/site";
 
@@ -30,11 +33,11 @@ export async function generateMetadata({
     title: { absolute: title },
     description,
     alternates: { canonical: `/services/${service.slug}` },
-    openGraph: {
+    openGraph: openGraphWithDefault({
       title,
       description,
       url: `/services/${service.slug}`,
-    },
+    }),
   };
 }
 
@@ -131,6 +134,14 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             </ol>
           </section>
         )}
+
+        <RelatedLinks
+          heading="Related reading"
+          links={getPostsForService(service.slug).map((post) => ({
+            href: `/blog/${post.slug}`,
+            label: post.title,
+          }))}
+        />
 
         <p className="mt-12">
           <Link
