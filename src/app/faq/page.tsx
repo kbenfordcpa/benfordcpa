@@ -4,6 +4,7 @@ import { CtaBanner } from "@/components/CtaBanner";
 import { FaqSection } from "@/components/FaqSection";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbJsonLd, faqPageJsonLd } from "@/lib/schema";
+import { openGraphWithDefault } from "@/lib/og";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -13,12 +14,12 @@ export const metadata: Metadata = {
   description:
     "Answers about tax planning, bookkeeping, virtual CFO services, CPA credentials, and consultations with Benford Consulting in the Shoals, Alabama.",
   alternates: { canonical: "/faq" },
-  openGraph: {
+  openGraph: openGraphWithDefault({
     title: "FAQ | Benford Consulting CPA — the Shoals, AL",
     description:
       "Answers about tax planning, bookkeeping, virtual CFO services, CPA credentials, and consultations in the Shoals, Alabama.",
     url: "/faq",
-  },
+  }),
 };
 
 export default function FaqPage() {

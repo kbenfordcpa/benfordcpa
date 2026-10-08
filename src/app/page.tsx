@@ -3,6 +3,7 @@ import Link from "next/link";
 import { CtaBanner } from "@/components/CtaBanner";
 import { ServiceCard } from "@/components/ServiceCard";
 import { getAllPosts } from "@/lib/blog";
+import { openGraphWithDefault } from "@/lib/og";
 import { faqs, scriptureQuote, services, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -12,12 +13,12 @@ export const metadata: Metadata = {
   description:
     "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance across the Shoals area. Faithful stewardship. Sound advice.",
   alternates: { canonical: "/" },
-  openGraph: {
+  openGraph: openGraphWithDefault({
     title: "CPA in the Shoals, AL | Benford Consulting",
     description:
       "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance across the Shoals area.",
     url: "/",
-  },
+  }),
 };
 
 function formatDate(iso: string): string {

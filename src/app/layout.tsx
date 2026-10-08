@@ -10,6 +10,7 @@ import {
   professionalServiceJsonLd,
   websiteJsonLd,
 } from "@/lib/schema";
+import { openGraphWithDefault } from "@/lib/og";
 import { siteConfig } from "@/lib/site";
 import "./globals.css";
 
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  openGraph: {
+  openGraph: openGraphWithDefault({
     type: "website",
     locale: "en_US",
     url: siteConfig.url,
@@ -61,21 +62,12 @@ export const metadata: Metadata = {
     title: "CPA in the Shoals, AL | Benford Consulting",
     description:
       "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance across the Shoals area.",
-    images: [
-      {
-        url: "/og-default.svg",
-        width: 1200,
-        height: 630,
-        alt: "Benford Consulting — Faithful Stewardship. Sound Financial Guidance.",
-      },
-    ],
-  },
+  }),
   twitter: {
     card: "summary_large_image",
     title: "CPA in the Shoals, AL | Benford Consulting",
     description:
       "Tax, bookkeeping, and financial guidance for the Shoals, Alabama.",
-    images: ["/og-default.svg"],
   },
   robots: {
     index: true,

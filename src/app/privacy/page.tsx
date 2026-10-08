@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { breadcrumbJsonLd } from "@/lib/schema";
+import { openGraphWithDefault } from "@/lib/og";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -8,12 +9,12 @@ export const metadata: Metadata = {
   description:
     "How Benford Consulting, LLC collects and uses information on www.benfordcpa.com — contact forms, the mailing list, Google Analytics, Microsoft Clarity, cookies, and your choices.",
   alternates: { canonical: "/privacy" },
-  openGraph: {
+  openGraph: openGraphWithDefault({
     title: "Privacy Policy | Benford Consulting, LLC",
     description:
       "How Benford Consulting collects and uses website information, analytics, and cookies.",
     url: "/privacy",
-  },
+  }),
 };
 
 const linkClass =
