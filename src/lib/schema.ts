@@ -1,7 +1,10 @@
 import { faqs, siteConfig } from "./site";
 
-const { name, url, email, serviceArea, founder, description, tagline } =
+const { name, shortName, url, email, serviceArea, founder, description, tagline } =
   siteConfig;
+
+const organizationId = `${url}/#organization`;
+const founderId = `${url}/about#kolby-benford`;
 
 export function websiteJsonLd() {
   return {
@@ -23,7 +26,8 @@ export function professionalServiceJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": ["AccountingService", "ProfessionalService", "LocalBusiness"],
-    name,
+    "@id": organizationId,
+    name: shortName,
     url,
     email,
     description: `${tagline} ${description}`,
@@ -45,8 +49,7 @@ export function professionalServiceJsonLd() {
     },
     founder: {
       "@type": "Person",
-      name: founder.name,
-      jobTitle: founder.jobTitle,
+      "@id": founderId,
     },
     knowsAbout: [
       "Tax planning",
@@ -65,14 +68,15 @@ export function personJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": founderId,
     name: founder.name,
     jobTitle: "Certified Public Accountant",
+    honorificSuffix: "CPA",
     description:
       "Licensed Alabama CPA (2022). Public accounting background with a focus on real estate taxation; Controller experience in the Shoals area. Founder of Benford Consulting, LLC.",
     worksFor: {
       "@type": "Organization",
-      name,
-      url,
+      "@id": organizationId,
     },
     alumniOf: {
       "@type": "EducationalOrganization",
@@ -85,14 +89,14 @@ export function personJsonLd() {
       "Bookkeeping",
       "Financial stewardship",
     ],
+    url: `${url}/about`,
+    email,
     address: {
       "@type": "PostalAddress",
-      addressLocality: "Tuscumbia",
+      addressLocality: "Florence",
       addressRegion: "AL",
       addressCountry: "US",
     },
-    url: `${url}/about`,
-    email,
   };
 }
 
