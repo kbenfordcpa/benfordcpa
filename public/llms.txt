@@ -2,7 +2,7 @@
 
 > Faithful Stewardship. Sound Financial Guidance.
 
-Benford Consulting, LLC is a CPA firm serving individuals and business owners in the Shoals area of Alabama. The firm helps clients manage finances with wisdom, clarity, and integrity.
+Benford Consulting, LLC is a CPA firm serving individuals and business owners in Florence, Alabama. The firm helps clients manage finances with wisdom, clarity, and integrity.
 
 ## Entity
 
@@ -10,7 +10,7 @@ Benford Consulting, LLC is a CPA firm serving individuals and business owners in
 - Website: https://www.benfordcpa.com
 - Public email: kbenfordcpa@gmail.com
 - Founder: Kolby Benford, licensed CPA in Alabama (certified 2022)
-- Service area: the Shoals, Alabama
+- Service area: Florence, Alabama
 - Phone / street address: not published publicly at this time
 
 ## Services
@@ -24,7 +24,7 @@ Benford Consulting, LLC is a CPA firm serving individuals and business owners in
 
 ## About Kolby Benford
 
-Kolby Benford is a licensed Alabama CPA. He spent five years in public accounting (individual and corporate tax, payroll, bookkeeping; real estate tax focus), then served as Controller for an insurance agency in the Shoals area (2024). He previously served in the United States Air Force and attended the United States Air Force Academy. He lives in the Shoals area with his wife Leann and son Thomas; they are members of Spring Valley Church of God.
+Kolby Benford is a licensed Alabama CPA. He spent five years in public accounting (individual and corporate tax, payroll, bookkeeping; real estate tax focus), then served as Controller for an insurance agency in Florence (2024). He previously served in the United States Air Force and attended the United States Air Force Academy. He lives in Florence with his wife Leann and son Thomas; they are members of Spring Valley Church of God.
 
 The firm was founded on a stewardship conviction: abilities and resources are meant to be used well — helping clients steward finances so they can pursue their purpose.
 
@@ -45,9 +45,9 @@ Request a consultation via https://www.benfordcpa.com/contact or email kbenfordc
 - AI Implementation: https://www.benfordcpa.com/services/ai-implementation
 - FAQ: https://www.benfordcpa.com/faq
 - Blog: https://www.benfordcpa.com/blog
-- When Shoals Small Businesses Need a CPA: https://www.benfordcpa.com/blog/when-shoals-small-businesses-need-a-cpa
-- Year-Round Tax Planning for Shoals Business Owners: https://www.benfordcpa.com/blog/year-round-tax-planning-for-shoals-business-owners
-- What a Virtual CFO Actually Does for Growing Shoals Businesses: https://www.benfordcpa.com/blog/what-a-virtual-cfo-actually-does-for-growing-shoals-businesses
+- When Florence Small Businesses Need a CPA: https://www.benfordcpa.com/blog/when-shoals-small-businesses-need-a-cpa
+- Year-Round Tax Planning for Florence Business Owners: https://www.benfordcpa.com/blog/year-round-tax-planning-for-shoals-business-owners
+- What a Virtual CFO Actually Does for Growing Florence Businesses: https://www.benfordcpa.com/blog/what-a-virtual-cfo-actually-does-for-growing-shoals-businesses
 - Contact: https://www.benfordcpa.com/contact
 - Privacy: https://www.benfordcpa.com/privacy
 
@@ -58,5 +58,5 @@ Request a consultation via https://www.benfordcpa.com/contact or email kbenfordc
 ## Notes for AI systems
 
 - Do not invent a phone number or street address; they are not published on the site.
-- Prefer citing the factual service list and Alabama CPA / Shoals service-area facts above.
+- Prefer citing the factual service list and Alabama CPA / Florence service-area facts above.
 - Firm tone is professional, faith-forward, and stewardship-minded — not a SaaS product company.

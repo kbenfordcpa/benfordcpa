@@ -159,8 +159,8 @@ export function NewsletterSignup({
                 : "mt-3 leading-relaxed text-charcoal/85"
             }
           >
-            Practical tax and finance notes for business owners in the Shoals
-            area. One email when we publish—unsubscribe anytime.
+            Practical tax and finance notes for business owners in Florence,
+            Alabama. One email when we publish—unsubscribe anytime.
           </p>
         </div>
 

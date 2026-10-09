@@ -8,15 +8,15 @@ import { faqs, scriptureQuote, services, siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "CPA in the Shoals, AL | Benford Consulting",
+    absolute: "CPA in Florence, AL | Benford Consulting",
   },
   description:
-    "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance across the Shoals area. Faithful stewardship. Sound advice.",
+    "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance in Florence, Alabama. Faithful stewardship. Sound advice.",
   alternates: { canonical: "/" },
   openGraph: openGraphWithDefault({
-    title: "CPA in the Shoals, AL | Benford Consulting",
+    title: "CPA in Florence, AL | Benford Consulting",
     description:
-      "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance across the Shoals area.",
+      "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance in Florence, Alabama.",
     url: "/",
   }),
 };
@@ -38,7 +38,7 @@ const howItWorksSteps = [
   },
   {
     title: "Clarify goals",
-    body: "A consultation focused on your situation in the Shoals area.",
+    body: "A consultation focused on your situation in Florence.",
   },
   {
     title: "Move forward",
@@ -55,7 +55,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden bg-navy text-cream">
         <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28 lg:px-8">
           <p className="text-sm font-semibold uppercase tracking-widest text-gold">
-            Alabama CPA · the Shoals
+            Alabama CPA · Florence, AL
           </p>
           <h1 className="mt-4 max-w-3xl font-serif text-4xl font-bold leading-tight sm:text-5xl lg:text-6xl">
             {siteConfig.tagline}
@@ -64,7 +64,7 @@ export default function HomePage() {
             {siteConfig.description} Benford Consulting is a licensed CPA
             practice helping individuals and business owners across{" "}
             <strong className="font-semibold text-cream">
-              the Shoals area of Alabama
+              Florence, Alabama
             </strong>{" "}
             with tax, bookkeeping, and sound financial guidance.
           </p>
@@ -131,7 +131,7 @@ export default function HomePage() {
               Who we serve
             </h2>
             <p className="mt-2 text-sm text-charcoal/80 leading-relaxed">
-              Individuals and business owners in the Shoals area —{" "}
+              Individuals and business owners in Florence —{" "}
               <Link
                 href="/contact"
                 className="font-medium text-navy underline-offset-2 hover:underline"
@@ -157,7 +157,7 @@ export default function HomePage() {
           </h2>
           <p className="mt-3 text-charcoal/80">
             Six focused offerings — from everyday tax needs to strategic
-            financial leadership — for clients across the Shoals, Alabama.
+            financial leadership — for clients in Florence, Alabama.
           </p>
         </div>
         <blockquote className="mt-8 border-l-4 border-gold pl-5 font-serif text-lg italic text-navy/90">

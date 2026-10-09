@@ -30,22 +30,22 @@ const sourceSans = Source_Sans_3({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "CPA in the Shoals, AL | Benford Consulting",
+    default: "CPA in Florence, AL | Benford Consulting",
     template: "%s | Benford Consulting",
   },
   description:
-    "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance across the Shoals area. Faithful stewardship. Sound advice.",
+    "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance in Florence, Alabama. Faithful stewardship. Sound advice.",
   applicationName: siteConfig.name,
   authors: [{ name: siteConfig.founder.name, url: `${siteConfig.url}/about` }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
   keywords: [
-    "CPA Shoals AL",
-    "Shoals area CPA",
-    "Shoals CPA",
+    "CPA Florence AL",
+    "Florence AL CPA",
+    "Florence Alabama CPA",
     "Alabama CPA",
-    "tax planning the Shoals",
-    "bookkeeping the Shoals",
+    "tax planning Florence AL",
+    "bookkeeping Florence AL",
     "virtual CFO Alabama",
     "real estate tax CPA",
     "Benford Consulting",
@@ -59,15 +59,15 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "CPA in the Shoals, AL | Benford Consulting",
+    title: "CPA in Florence, AL | Benford Consulting",
     description:
-      "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance across the Shoals area.",
+      "Alabama CPA helping individuals and business owners with tax, bookkeeping, and financial guidance in Florence, Alabama.",
   }),
   twitter: {
     card: "summary_large_image",
-    title: "CPA in the Shoals, AL | Benford Consulting",
+    title: "CPA in Florence, AL | Benford Consulting",
     description:
-      "Tax, bookkeeping, and financial guidance for the Shoals, Alabama.",
+      "Tax, bookkeeping, and financial guidance for Florence, Alabama.",
   },
   robots: {
     index: true,

@@ -26,8 +26,8 @@ export async function generateMetadata({
     return { title: "Service not found" };
   }
 
-  const title = `${service.title} | CPA in the Shoals, AL | Benford Consulting`;
-  const description = `${service.summary} Serving the Shoals area.`;
+  const title = `${service.title} | CPA in Florence, AL | Benford Consulting`;
+  const description = `${service.summary} Serving Florence, Alabama.`;
 
   return {
     title: { absolute: title },
@@ -155,7 +155,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
 
       <CtaBanner
         title={`Interested in ${service.title}?`}
-        body={`Request a consultation with ${siteConfig.shortName}. Serving individuals and business owners across the Shoals area.`}
+        body={`Request a consultation with ${siteConfig.shortName}. Serving individuals and business owners in Florence, Alabama.`}
       />
     </>
   );

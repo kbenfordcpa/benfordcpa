@@ -12,12 +12,12 @@ export const metadata: Metadata = {
     absolute: "Tax, Bookkeeping & Virtual CFO | Benford Consulting CPA",
   },
   description:
-    "Tax planning (including real estate), tax prep, bookkeeping, accounting setup, virtual CFO, and practical AI tools — for individuals and businesses in the Shoals, AL area.",
+    "Tax planning (including real estate), tax prep, bookkeeping, accounting setup, virtual CFO, and practical AI tools — for individuals and businesses in Florence, AL.",
   alternates: { canonical: "/services" },
   openGraph: openGraphWithDefault({
     title: "Tax, Bookkeeping & Virtual CFO | Benford Consulting CPA",
     description:
-      "Tax planning (including real estate), tax prep, bookkeeping, accounting setup, virtual CFO, and practical AI tools — for individuals and businesses in the Shoals, AL area.",
+      "Tax planning (including real estate), tax prep, bookkeeping, accounting setup, virtual CFO, and practical AI tools — for individuals and businesses in Florence, AL.",
     url: "/services",
   }),
 };
@@ -41,8 +41,8 @@ export default function ServicesPage() {
             Financial services rooted in stewardship
           </h1>
           <p className="mt-4 max-w-2xl text-cream/85">
-            Six focused services to help individuals and business owners in the
-            Shoals area manage
+            Six focused services to help individuals and business owners in
+            Florence manage
             their finances with wisdom, clarity, and integrity — from everyday
             tax needs to strategic financial leadership.
           </p>

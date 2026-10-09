@@ -10,15 +10,15 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Blog | Benford Consulting CPA — Shoals, AL",
+    absolute: "Blog | Benford Consulting CPA — Florence, AL",
   },
   description:
-    "Practical tax, bookkeeping, and stewardship insights for small businesses and individuals in the Shoals area.",
+    "Practical tax, bookkeeping, and stewardship insights for small businesses and individuals in Florence, Alabama.",
   alternates: { canonical: "/blog" },
   openGraph: openGraphWithDefault({
-    title: "Blog | Benford Consulting CPA — Shoals, AL",
+    title: "Blog | Benford Consulting CPA — Florence, AL",
     description:
-      "Practical tax, bookkeeping, and stewardship insights for Shoals-area small businesses and individuals.",
+      "Practical tax, bookkeeping, and stewardship insights for small businesses and individuals in Florence.",
     url: "/blog",
   }),
 };
@@ -51,11 +51,11 @@ export default function BlogIndexPage() {
             Blog
           </p>
           <h1 className="mt-3 font-serif text-4xl font-bold sm:text-5xl">
-            Insights for Shoals stewards
+            Insights for Florence stewards
           </h1>
           <p className="mt-4 max-w-2xl text-cream/85">
             Practical notes on tax, bookkeeping, and financial clarity for
-            individuals and business owners in the Shoals area — from{" "}
+            individuals and business owners in Florence — from{" "}
             {siteConfig.shortName}.
           </p>
         </div>
@@ -68,7 +68,7 @@ export default function BlogIndexPage() {
               Articles coming soon
             </h2>
             <p className="mt-3 text-charcoal/80 leading-relaxed">
-              We are preparing practical guidance for Shoals small businesses and
+              We are preparing practical guidance for Florence small businesses and
               individuals. In the meantime, explore{" "}
               <Link
                 href="/services"

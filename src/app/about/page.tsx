@@ -6,17 +6,16 @@ import { breadcrumbJsonLd, personJsonLd } from "@/lib/schema";
 import { openGraphWithDefault } from "@/lib/og";
 import { siteConfig } from "@/lib/site";
 
+const aboutTitle = "Kolby Benford, CPA | Florence, AL";
+const aboutDescription = `Meet Kolby Benford, CPA, founder of ${siteConfig.shortName} in Florence, Alabama. Licensed Alabama CPA with a public accounting background and stewardship-minded financial guidance.`;
+
 export const metadata: Metadata = {
-  title: {
-    absolute: "About Kolby Benford, CPA | the Shoals, AL",
-  },
-  description:
-    "Meet Kolby Benford, licensed Alabama CPA — Air Force veteran, public accounting background, and Controller in the Shoals area. Stewardship-minded guidance for your finances.",
+  title: aboutTitle,
+  description: aboutDescription,
   alternates: { canonical: "/about" },
   openGraph: openGraphWithDefault({
-    title: "About Kolby Benford, CPA | the Shoals, AL",
-    description:
-      "Meet Kolby Benford, licensed Alabama CPA — Air Force veteran, public accounting background, and Controller in the Shoals area.",
+    title: `${aboutTitle} | ${siteConfig.shortName}`,
+    description: aboutDescription,
     url: "/about",
   }),
 };
@@ -38,17 +37,21 @@ export default function AboutPage() {
             About
           </p>
           <h1 className="mt-3 font-serif text-4xl font-bold sm:text-5xl">
-            About Kolby Benford, CPA
+            Kolby Benford, CPA
           </h1>
           <p className="mt-4 max-w-2xl text-cream/85">
-            Founder of {siteConfig.name} — licensed Alabama CPA serving the
-            Shoals area with stewardship-minded financial guidance.
+            Founder of {siteConfig.shortName} in Florence, Alabama.
           </p>
         </div>
       </section>
 
       <article className="mx-auto max-w-3xl px-4 py-14 sm:px-6 lg:px-8">
-        <section aria-labelledby="conviction">
+        <p className="leading-relaxed text-charcoal/85">
+          Kolby provides CPA services for individuals and business owners in
+          Florence, Alabama.
+        </p>
+
+        <section className="mt-12" aria-labelledby="conviction">
           <h2
             id="conviction"
             className="font-serif text-2xl font-semibold text-navy"
@@ -86,9 +89,9 @@ export default function AboutPage() {
             </li>
             <li>
               In <strong>2024</strong>, transitioned into industry as{" "}
-              <strong>Controller</strong> for an insurance agency in the Shoals
-              area, leading the accounting department and overseeing financial
-              reporting across multiple entities.
+              <strong>Controller</strong> for an insurance agency, leading the
+              accounting department and overseeing financial reporting across
+              multiple entities.
             </li>
           </ul>
           <p className="mt-4 text-charcoal/85 leading-relaxed">
@@ -125,10 +128,10 @@ export default function AboutPage() {
             id="community"
             className="font-serif text-2xl font-semibold text-navy"
           >
-            Life in the Shoals
+            Family and community
           </h2>
           <p className="mt-4 leading-relaxed text-charcoal/85">
-            Kolby lives in the Shoals area with his wife, Leann, and their
+            Kolby lives in Florence with his wife, Leann, and their
             son, Thomas. They’re active members of Spring Valley Church of God.
             Outside of work, Kolby enjoys spending time with his family, camping,
             and woodworking.
@@ -140,8 +143,8 @@ export default function AboutPage() {
             Work with Kolby
           </h2>
           <p className="mt-2 text-charcoal/80">
-            Looking for a CPA in the Shoals who brings
-            both technical skill and a stewardship mindset?{" "}
+            Looking for a CPA who brings both technical skill and a
+            stewardship mindset?{" "}
             <Link
               href="/contact"
               className="font-semibold text-navy underline-offset-2 hover:underline"

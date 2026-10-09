@@ -8,15 +8,15 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Contact Benford Consulting | CPA Serving the Shoals, AL",
+    absolute: "Contact Benford Consulting | CPA Serving Florence, AL",
   },
   description:
-    "Request a consultation with Benford Consulting for tax, bookkeeping, or financial guidance. Serving individuals and business owners in the Shoals area.",
+    "Request a consultation with Benford Consulting for tax, bookkeeping, or financial guidance. Serving individuals and business owners in Florence, Alabama.",
   alternates: { canonical: "/contact" },
   openGraph: openGraphWithDefault({
-    title: "Contact Benford Consulting | CPA Serving the Shoals, AL",
+    title: "Contact Benford Consulting | CPA Serving Florence, AL",
     description:
-      "Request a consultation with Benford Consulting for tax, bookkeeping, or financial guidance. Serving the Shoals area.",
+      "Request a consultation with Benford Consulting for tax, bookkeeping, or financial guidance. Serving Florence, Alabama.",
     url: "/contact",
   }),
 };
@@ -42,7 +42,7 @@ export default function ContactPage() {
           <p className="mt-4 max-w-2xl text-cream/85">
             Tell us about your tax, bookkeeping, virtual CFO, or broader
             financial guidance needs. {siteConfig.shortName} serves individuals
-            and business owners across the Shoals area of Alabama.
+            and business owners in Florence, Alabama.
           </p>
         </div>
       </section>
