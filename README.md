@@ -58,7 +58,7 @@ Optional future vars (not used yet):
 
 - **Email (public):** `kbenfordcpa@gmail.com`
 - **Phone / street address:** not on the live Squarespace site — **do not invent**. Placeholders are commented in `src/lib/site.ts` and omitted from displayed NAP and JSON-LD `telephone` / `streetAddress`.
-- Service area wording only: Florence–Tuscumbia / Shoals, Alabama.
+- Service area wording only: Florence, Alabama.
 
 ## Deploy to Vercel
 

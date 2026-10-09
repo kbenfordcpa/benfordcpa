@@ -114,7 +114,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           </h2>
           <p className="mt-2 text-charcoal/80 leading-relaxed">
             Looking for tax planning, preparation, bookkeeping, or virtual CFO
-            support in the Shoals area?{" "}
+            support in Florence?{" "}
             <Link
               href="/contact"
               className="font-semibold text-navy underline-offset-2 hover:underline"

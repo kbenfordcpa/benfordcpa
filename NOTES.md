@@ -13,7 +13,7 @@ Short changelog of what this Next.js site improves relative to the live Squaresp
 - Unique `<title>` and meta description per page (drafts from brief).
 - `metadataBase` → `https://www.benfordcpa.com`; canonical URLs on every page.
 - Open Graph + Twitter cards with HTTPS image paths (`/og-default.svg`).
-- Homepage now includes natural local keywords: Florence, Tuscumbia, Shoals, Alabama CPA (Squarespace homepage largely lacked this).
+- Homepage now includes natural local keywords: Florence, Alabama CPA (Squarespace homepage largely lacked this).
 - Semantic HTML: one H1 per page, section headings, skip link, focus states.
 
 ## Technical SEO

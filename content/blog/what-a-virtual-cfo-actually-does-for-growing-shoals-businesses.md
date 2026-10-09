@@ -1,6 +1,6 @@
 ---
-title: "What a Virtual CFO Actually Does for Growing Shoals Businesses"
-description: "Plain-language look at virtual CFO work for growing Shoals businesses — cash flow, KPIs, forecasts, and how it differs from bookkeeping and tax prep."
+title: "What a Virtual CFO Actually Does for Growing Florence Businesses"
+description: "Plain-language look at virtual CFO work for growing Florence businesses — cash flow, KPIs, forecasts, and how it differs from bookkeeping and tax prep."
 date: "2026-10-06"
 author: "Kolby Benford, CPA"
 slug: "what-a-virtual-cfo-actually-does-for-growing-shoals-businesses"
@@ -11,7 +11,7 @@ relatedServices:
   - tax-preparation
   - tax-planning
 ---
-For many business owners in the Shoals area, finance is still a personal system. You watch the bank balance, pay what is due, send documents to a tax preparer in the spring, and get back to the work that built the business. That rhythm can last for years.
+For many business owners in Florence, finance is still a personal system. You watch the bank balance, pay what is due, send documents to a tax preparer in the spring, and get back to the work that built the business. That rhythm can last for years.
 
 Growth changes the questions. Can we hire? Should we raise prices? Is this job actually profitable? Why does the profit-and-loss look fine while cash feels tight? A virtual CFO is one way to answer those questions without a full-time finance executive.
 

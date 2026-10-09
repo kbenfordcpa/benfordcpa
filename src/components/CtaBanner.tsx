@@ -7,7 +7,7 @@ type CtaBannerProps = {
 
 export function CtaBanner({
   title = "Ready to talk about your finances?",
-  body = "Whether you need tax planning, bookkeeping, virtual CFO support, or a clearer system — request a consultation. Serving individuals and business owners across the Shoals area.",
+  body = "Whether you need tax planning, bookkeeping, virtual CFO support, or a clearer system — request a consultation. Serving individuals and business owners in Florence, Alabama.",
 }: CtaBannerProps) {
   return (
     <section className="bg-navy">

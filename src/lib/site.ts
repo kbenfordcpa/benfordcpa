@@ -15,13 +15,12 @@ export const siteConfig = {
   // phone: TBD — not published on live site; do not invent
   // streetAddress: TBD — not published on live site; do not invent
   serviceArea: {
-    label: "the Shoals, Alabama",
+    label: "Florence, Alabama",
     cities: [
       "Florence",
       "Tuscumbia",
       "Muscle Shoals",
       "Sheffield",
-      "Shoals",
     ] as const,
     region: "AL",
     country: "US",
@@ -57,7 +56,7 @@ export const services = [
     whatItIs:
       "Year-round tax strategy that looks ahead of filing season — structuring ownership, timing income and expenses, and using available credits and deductions.",
     whoItsFor:
-      "Individuals and business owners — especially those with rental properties, real estate investments, or complex returns — in the Shoals area and beyond.",
+      "Individuals and business owners — especially those with rental properties, real estate investments, or complex returns — in Florence, Alabama and beyond.",
     outcome:
       "A clearer plan to reduce tax liability legally and avoid surprises at filing time.",
     howItWorks: [
@@ -66,7 +65,7 @@ export const services = [
       "Leave you with a written plan you can act on and revisit as life changes.",
     ],
     detailParagraph:
-      "Tax planning at Benford Consulting is year-round strategy, not a once-a-year scramble. With a focus on real estate taxation, Kolby helps Shoals-area investors and owners structure ownership, time income and expenses, and use available credits so filing season brings fewer surprises.",
+      "Tax planning at Benford Consulting is year-round strategy, not a once-a-year scramble. With a focus on real estate taxation, Kolby helps investors and owners in Florence structure ownership, time income and expenses, and use available credits so filing season brings fewer surprises.",
   },
   {
     slug: "virtual-cfo",
@@ -77,7 +76,7 @@ export const services = [
     whatItIs:
       "Fractional CFO support: cash-flow planning, financial reporting, KPI tracking, and decision support on a part-time or project basis.",
     whoItsFor:
-      "Growing businesses in the Shoals and surrounding Alabama markets that need leadership-level finance insight without a full-time CFO salary.",
+      "Growing businesses in Florence and surrounding Alabama markets that need leadership-level finance insight without a full-time CFO salary.",
     outcome:
       "Better visibility into the numbers that drive growth, with guidance you can act on.",
     howItWorks: [
@@ -86,7 +85,7 @@ export const services = [
       "Advise alongside your books so strategy stays grounded in clean numbers.",
     ],
     detailParagraph:
-      "Virtual CFO support gives growing Shoals businesses leadership-level finance insight — cash-flow planning, reporting, and KPI tracking — without a full-time hire. It pairs naturally with bookkeeping and tax work so owners have both clean books and forward-looking advice.",
+      "Virtual CFO support gives growing businesses in Florence leadership-level finance insight — cash-flow planning, reporting, and KPI tracking — without a full-time hire. It pairs naturally with bookkeeping and tax work so owners have both clean books and forward-looking advice.",
   },
   {
     slug: "tax-preparation",
@@ -106,7 +105,7 @@ export const services = [
       "File on time and leave clearer records for next year’s planning.",
     ],
     detailParagraph:
-      "Tax preparation covers individual and business returns with care so personal and entity filings work together. Clients across the Shoals area get on-time, compliant filings without DIY stress — and cleaner records for the year ahead.",
+      "Tax preparation covers individual and business returns with care so personal and entity filings work together. Clients in Florence get on-time, compliant filings without DIY stress — and cleaner records for the year ahead.",
   },
   {
     slug: "accounting-system-setup",
@@ -126,7 +125,7 @@ export const services = [
       "Support go-live so reporting and tax prep start from clean data.",
     ],
     detailParagraph:
-      "Accounting system setup means selecting and configuring tools that match how your business operates — including chart-of-accounts design and go-live support. Ideal for new Shoals businesses or established ones outgrowing spreadsheets or messy books.",
+      "Accounting system setup means selecting and configuring tools that match how your business operates — including chart-of-accounts design and go-live support. Ideal for new businesses in Florence or established ones outgrowing spreadsheets or messy books.",
   },
   {
     slug: "bookkeeping",
@@ -146,7 +145,7 @@ export const services = [
       "Hand off clean books that tax prep and virtual CFO work can build on.",
     ],
     detailParagraph:
-      "Bookkeeping keeps transactions recorded, accounts reconciled, and statements organized on a monthly or custom cadence. Shoals business owners get dependable books for decisions, lenders, and tax season — not just year-end catch-up.",
+      "Bookkeeping keeps transactions recorded, accounts reconciled, and statements organized on a monthly or custom cadence. Florence business owners get dependable books for decisions, lenders, and tax season — not just year-end catch-up.",
   },
   {
     slug: "ai-implementation",
@@ -180,17 +179,17 @@ export const faqs = [
   {
     question: "What services does Benford Consulting offer?",
     answer:
-      "Benford Consulting provides tax planning (including real estate taxation), tax preparation for individuals and businesses, bookkeeping, accounting system setup, virtual CFO services, and practical AI implementation for financial workflows. The firm serves individuals and business owners in the Shoals, Alabama area.",
+      "Benford Consulting provides tax planning (including real estate taxation), tax preparation for individuals and businesses, bookkeeping, accounting system setup, virtual CFO services, and practical AI implementation for financial workflows. The firm serves individuals and business owners in Florence, Alabama.",
   },
   {
     question: "Where is Benford Consulting located?",
     answer:
-      "Benford Consulting, LLC serves the Shoals area of Alabama. Consultations can be arranged by email.",
+      "Benford Consulting, LLC serves Florence, Alabama. Consultations can be arranged by email.",
   },
   {
     question: "Is Kolby Benford a licensed CPA?",
     answer:
-      "Yes. Kolby Benford is a licensed Certified Public Accountant in Alabama, earning his CPA certification in 2022. He has a background in public accounting and has served as Controller for an insurance agency in the Shoals area.",
+      "Yes. Kolby Benford is a licensed Certified Public Accountant in Alabama, earning his CPA certification in 2022. He has a background in public accounting and has served as Controller for an insurance agency in Florence.",
   },
   {
     question: "Do you specialize in real estate taxation?",

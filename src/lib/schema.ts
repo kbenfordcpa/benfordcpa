@@ -6,6 +6,28 @@ const { name, shortName, url, email, serviceArea, founder, description, tagline 
 const organizationId = `${url}/#organization`;
 const founderId = `${url}/about#kolby-benford`;
 
+function areaServedPlaces() {
+  return serviceArea.cities.map((city) => ({
+    "@type": "City" as const,
+    name: city,
+    ...(city === "Florence"
+      ? {
+          address: {
+            "@type": "PostalAddress" as const,
+            addressLocality: "Florence",
+            addressRegion: serviceArea.region,
+            addressCountry: serviceArea.country,
+          },
+        }
+      : {}),
+    containedInPlace: {
+      "@type": "State" as const,
+      name: "Alabama",
+      addressCountry: serviceArea.country,
+    },
+  }));
+}
+
 export function websiteJsonLd() {
   return {
     "@context": "https://schema.org",
@@ -31,15 +53,7 @@ export function professionalServiceJsonLd() {
     url,
     email,
     description: `${tagline} ${description}`,
-    areaServed: serviceArea.cities.map((city) => ({
-      "@type": "City",
-      name: city,
-      containedInPlace: {
-        "@type": "State",
-        name: "Alabama",
-        addressCountry: "US",
-      },
-    })),
+    areaServed: areaServedPlaces(),
     address: {
       "@type": "PostalAddress",
       addressLocality: "Tuscumbia",
@@ -73,7 +87,7 @@ export function personJsonLd() {
     jobTitle: "Certified Public Accountant",
     honorificSuffix: "CPA",
     description:
-      "Licensed Alabama CPA (2022). Public accounting background with a focus on real estate taxation; Controller experience in the Shoals area. Founder of Benford Consulting, LLC.",
+      "Licensed Alabama CPA (2022). Public accounting background with a focus on real estate taxation; Controller experience in Florence. Founder of Benford Consulting, LLC.",
     worksFor: {
       "@type": "Organization",
       "@id": organizationId,
@@ -149,15 +163,7 @@ export function serviceJsonLd(service: {
       url,
       email,
     },
-    areaServed: serviceArea.cities.map((city) => ({
-      "@type": "City",
-      name: city,
-      containedInPlace: {
-        "@type": "State",
-        name: "Alabama",
-        addressCountry: "US",
-      },
-    })),
+    areaServed: areaServedPlaces(),
     // telephone / streetAddress omitted until verified NAP exists
   };
 }

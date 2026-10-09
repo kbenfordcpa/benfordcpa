@@ -36,7 +36,7 @@ export function Footer() {
               </a>
             </li>
             <li className="text-cream/70">
-              the Shoals, AL
+              Florence, AL
             </li>
           </ul>
         </div>

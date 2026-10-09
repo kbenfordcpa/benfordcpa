@@ -131,7 +131,7 @@ export default function AboutPage() {
             Family and community
           </h2>
           <p className="mt-4 leading-relaxed text-charcoal/85">
-            Kolby lives in the Shoals area with his wife, Leann, and their
+            Kolby lives in Florence with his wife, Leann, and their
             son, Thomas. They’re active members of Spring Valley Church of God.
             Outside of work, Kolby enjoys spending time with his family, camping,
             and woodworking.
