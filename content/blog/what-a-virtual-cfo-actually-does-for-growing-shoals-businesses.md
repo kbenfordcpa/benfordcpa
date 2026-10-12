@@ -122,6 +122,6 @@ You need a clear view of cash, a few numbers you trust, and someone who will sit
 
 ## Next step
 
-If the numbers feel reactive — or you want a plain-language conversation about whether virtual CFO support, cleaner books, or year-round tax planning is the right next step — [request a consultation](/contact). You can also email [kbenfordcpa@gmail.com](mailto:kbenfordcpa@gmail.com) with a short note about your business and the decisions you are weighing.
+If the numbers feel reactive — or you want a plain-language conversation about whether virtual CFO support, cleaner books, or year-round tax planning is the right next step — [request a consultation](/contact). You can also email [kolby@benfordcpa.com](mailto:kolby@benfordcpa.com) with a short note about your business and the decisions you are weighing.
 
 There is no obligation in a first conversation. The goal is straightforward: help you see the next faithful step for the business you are building.

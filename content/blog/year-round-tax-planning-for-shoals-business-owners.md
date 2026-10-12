@@ -92,6 +92,6 @@ Benford Consulting helps individuals and business owners manage their finances w
 
 ## Next step
 
-If you want tax season to reflect a year of intentional decisions — or you need a clear conversation about estimates, books, or planning before year-end — [request a consultation](/contact). You can also email [kbenfordcpa@gmail.com](mailto:kbenfordcpa@gmail.com) with a short note about your business and what you are weighing.
+If you want tax season to reflect a year of intentional decisions — or you need a clear conversation about estimates, books, or planning before year-end — [request a consultation](/contact). You can also email [kolby@benfordcpa.com](mailto:kolby@benfordcpa.com) with a short note about your business and what you are weighing.
 
 There is no obligation in a first conversation. The goal is straightforward: help you see the next faithful step for the business you are building — not only in April, but across the year.
