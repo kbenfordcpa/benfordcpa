@@ -4,7 +4,7 @@ description: "Tax prep records a closed year. Tax planning shapes it. A practica
 date: "2026-10-12"
 author: "Kolby Benford, CPA"
 slug: "tax-prep-vs-tax-planning-before-year-end-florence"
-draft: true
+draft: false
 relatedServices:
   - tax-planning
   - tax-preparation
