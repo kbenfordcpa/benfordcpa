@@ -97,6 +97,6 @@ Benford Consulting helps individuals and business owners manage their finances w
 
 ## Next step
 
-If you are weighing whether it is time for a CPA — or you need a clear conversation about tax, books, or planning — [request a consultation](/contact). You can also email [kbenfordcpa@gmail.com](mailto:kbenfordcpa@gmail.com) with a short note about your situation.
+If you are weighing whether it is time for a CPA — or you need a clear conversation about tax, books, or planning — [request a consultation](/contact). You can also email [kolby@benfordcpa.com](mailto:kolby@benfordcpa.com) with a short note about your situation.
 
 There is no obligation in a first conversation. The goal is simple: help you see the next faithful step for the business you are building.

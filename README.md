@@ -44,19 +44,19 @@ Open [http://localhost:3000](http://localhost:3000).
 
 No required environment variables for the current build.
 
-- Contact form uses **client-side `mailto:`** to `kbenfordcpa@gmail.com`. It does **not** send email from the server.
+- Contact form uses **client-side `mailto:`** to `kolby@benfordcpa.com`. It does **not** send email from the server.
 - When you wire a real form backend (Resend, Formspree, etc.), add secrets via Vercel env vars — do **not** commit API keys.
 
 Optional future vars (not used yet):
 
 ```bash
-# CONTACT_TO_EMAIL=kbenfordcpa@gmail.com
+# CONTACT_TO_EMAIL=kolby@benfordcpa.com
 # RESEND_API_KEY=
 ```
 
 ## NAP / content policy
 
-- **Email (public):** `kbenfordcpa@gmail.com`
+- **Email (public):** `kolby@benfordcpa.com`
 - **Phone / street address:** not on the live Squarespace site — **do not invent**. Placeholders are commented in `src/lib/site.ts` and omitted from displayed NAP and JSON-LD `telephone` / `streetAddress`.
 - Service area wording only: Florence, Alabama.
 

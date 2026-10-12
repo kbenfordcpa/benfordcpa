@@ -11,7 +11,7 @@ export const siteConfig = {
   description:
     "Helping individuals and business owners manage their finances with wisdom, clarity, and integrity.",
   url: "https://www.benfordcpa.com",
-  email: "kbenfordcpa@gmail.com",
+  email: "kolby@benfordcpa.com",
   // phone: TBD — not published on live site; do not invent
   // streetAddress: TBD — not published on live site; do not invent
   serviceArea: {
@@ -204,7 +204,7 @@ export const faqs = [
   {
     question: "How do I request a consultation?",
     answer:
-      "Use the contact form on this website or email kbenfordcpa@gmail.com. Share a brief note about whether you need tax, bookkeeping, virtual CFO, or another service, and Benford Consulting will follow up to schedule a discussion.",
+      "Use the contact form on this website or email kolby@benfordcpa.com. Share a brief note about whether you need tax, bookkeeping, virtual CFO, or another service, and Benford Consulting will follow up to schedule a discussion.",
   },
   {
     question: "What does “faithful stewardship” mean for clients?",

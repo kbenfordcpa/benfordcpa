@@ -69,6 +69,6 @@ Benford Consulting helps individuals and business owners with tax planning, tax 
 
 ## Next step
 
-If you want a year-end planning conversation before December 31, [request a consultation](/contact). You can also email [kbenfordcpa@gmail.com](mailto:kbenfordcpa@gmail.com) with a short note about the decisions still open.
+If you want a year-end planning conversation before December 31, [request a consultation](/contact). You can also email [kolby@benfordcpa.com](mailto:kolby@benfordcpa.com) with a short note about the decisions still open.
 
 There is no obligation in a first conversation. The goal is the next faithful step before the year closes.
