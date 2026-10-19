@@ -4,7 +4,7 @@ description: "What Florence business owners should collect before January 31: wh
 date: "2026-10-19"
 author: "Kolby Benford, CPA"
 slug: "1099s-due-january-31-what-to-collect-from-contractors-florence"
-draft: true
+draft: false
 relatedServices:
   - tax-preparation
   - bookkeeping
