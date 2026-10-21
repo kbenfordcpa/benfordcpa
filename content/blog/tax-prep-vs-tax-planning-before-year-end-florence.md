@@ -1,5 +1,6 @@
 ---
 title: "Tax Prep vs. Tax Planning: What Florence Business Owners Should Lock In Before Year-End"
+seoTitle: "Tax Prep vs. Tax Planning Before Year-End | Florence, AL"
 description: "Tax prep records a closed year. Tax planning shapes it. A practical checklist for Florence business owners before December 31."
 date: "2026-10-12"
 author: "Kolby Benford, CPA"

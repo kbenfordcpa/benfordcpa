@@ -1,6 +1,8 @@
 ---
 title: "1099s Are Due January 31: What Florence Business Owners Should Collect From Contractors Now"
+seoTitle: "1099s Due January 31: Contractor Checklist (Florence, AL)"
 description: "What Florence business owners should collect before January 31: who gets a 1099-NEC or 1099-MISC for 2026 payments, the $2,000 federal threshold, and a simple checklist."
+seoDescription: "Who gets a 1099-NEC or 1099-MISC for 2026 payments, the $2,000 threshold, and a simple checklist for Florence business owners before Jan. 31."
 date: "2026-10-19"
 author: "Kolby Benford, CPA"
 slug: "1099s-due-january-31-what-to-collect-from-contractors-florence"
