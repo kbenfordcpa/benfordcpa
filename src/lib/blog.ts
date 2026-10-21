@@ -13,7 +13,17 @@ export type ServiceSlug = Service["slug"];
 
 export type BlogPostMeta = {
   title: string;
+  /**
+   * Search document title. When set, `<title>` and `og:title` use this
+   * string exactly, with no site-name suffix. The visible H1 stays `title`.
+   */
+  seoTitle?: string;
   description: string;
+  /**
+   * Search meta description and `og:description`. When omitted, `description`
+   * is used. Listing excerpts and article schema stay on `description`.
+   */
+  seoDescription?: string;
   date: string;
   author: string;
   slug: string;
@@ -53,7 +63,9 @@ function parseFile(filename: string): BlogPost {
 
   return {
     title: String(data.title ?? ""),
+    seoTitle: optionalFrontmatterString(data.seoTitle),
     description: String(data.description ?? ""),
+    seoDescription: optionalFrontmatterString(data.seoDescription),
     date: String(data.date ?? ""),
     author: String(data.author ?? ""),
     slug,
@@ -62,6 +74,12 @@ function parseFile(filename: string): BlogPost {
     content,
     contentHtml: "",
   };
+}
+
+function optionalFrontmatterString(value: unknown): string | undefined {
+  if (typeof value !== "string") return undefined;
+  const trimmed = value.trim();
+  return trimmed.length > 0 ? trimmed : undefined;
 }
 
 function parseRelatedServices(value: unknown, slug: string): ServiceSlug[] {

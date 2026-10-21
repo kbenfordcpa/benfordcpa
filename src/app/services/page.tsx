@@ -12,12 +12,12 @@ export const metadata: Metadata = {
     absolute: "Tax, Bookkeeping & Virtual CFO | Benford Consulting CPA",
   },
   description:
-    "Tax planning (including real estate), tax prep, bookkeeping, accounting setup, virtual CFO, and practical AI tools — for individuals and businesses in Florence, AL.",
+    "Tax planning, tax prep, bookkeeping, accounting setup, virtual CFO, and practical AI tools for individuals and businesses in Florence, AL.",
   alternates: { canonical: "/services" },
   openGraph: openGraphWithDefault({
     title: "Tax, Bookkeeping & Virtual CFO | Benford Consulting CPA",
     description:
-      "Tax planning (including real estate), tax prep, bookkeeping, accounting setup, virtual CFO, and practical AI tools — for individuals and businesses in Florence, AL.",
+      "Tax planning, tax prep, bookkeeping, accounting setup, virtual CFO, and practical AI tools for individuals and businesses in Florence, AL.",
     url: "/services",
   }),
 };

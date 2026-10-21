@@ -7,7 +7,8 @@ import { openGraphWithDefault } from "@/lib/og";
 import { siteConfig } from "@/lib/site";
 
 const aboutTitle = "Kolby Benford, CPA | Florence, AL";
-const aboutDescription = `Meet Kolby Benford, CPA, founder of ${siteConfig.shortName} in Florence, Alabama. Licensed Alabama CPA with a public accounting background and stewardship-minded financial guidance.`;
+const aboutDescription =
+  "Meet Kolby Benford, licensed Alabama CPA and founder of Benford Consulting in Florence, AL, offering stewardship-minded financial guidance.";
 
 export const metadata: Metadata = {
   title: aboutTitle,

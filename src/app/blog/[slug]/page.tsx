@@ -26,16 +26,21 @@ export async function generateMetadata({
     return { title: "Article not found" };
   }
 
+  const documentTitle = post.seoTitle
+    ? post.seoTitle
+    : `${post.title} | Benford Consulting`;
+  const metaDescription = post.seoDescription ?? post.description;
+
   return {
     title: {
-      absolute: `${post.title} | Benford Consulting`,
+      absolute: documentTitle,
     },
-    description: post.description,
+    description: metaDescription,
     alternates: { canonical: `/blog/${post.slug}` },
     openGraph: openGraphWithDefault({
       type: "article",
-      title: post.title,
-      description: post.description,
+      title: post.seoTitle ?? post.title,
+      description: metaDescription,
       url: `/blog/${post.slug}`,
       publishedTime: post.date,
       authors: [post.author],
