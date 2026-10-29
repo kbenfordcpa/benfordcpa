@@ -41,8 +41,8 @@ Short changelog of what this Next.js site improves relative to the live Squaresp
 
 ## Forms
 
-- Client-side `mailto:` consultation form; explicitly notes server wiring comes later.
-- Does **not** send email or post to third parties in this release.
+- Consultation requests are emailed through Resend from a server route. Phone is optional.
+- If Resend is not configured, the page shows a normal failure and the server logs it. No setup note is shown to visitors.
 
 ## Intentionally not invented
 
