@@ -23,6 +23,7 @@ export function ContactForm() {
 
     const name = String(data.get("name") || "").trim();
     const email = String(data.get("email") || "").trim();
+    const phone = String(data.get("phone") || "").trim();
     const interest = String(data.get("interest") || "").trim();
     const message = String(data.get("message") || "").trim();
 
@@ -34,19 +35,17 @@ export function ContactForm() {
     const subject = encodeURIComponent(
       `Consultation request — ${interest || "General"} — ${name}`,
     );
-    const body = encodeURIComponent(
-      [
-        `Name: ${name}`,
-        `Email: ${email}`,
-        `Interest: ${interest || "Not specified"}`,
-        "",
-        "Message:",
-        message,
-        "",
-        "---",
-        "Sent via benfordcpa.com contact form (mailto). Server-side form wiring comes next.",
-      ].join("\n"),
+    const lines = [`Name: ${name}`, `Email: ${email}`];
+    if (phone) {
+      lines.push(`Phone: ${phone}`);
+    }
+    lines.push(
+      `Interest: ${interest || "Not specified"}`,
+      "",
+      "Message:",
+      message,
     );
+    const body = encodeURIComponent(lines.join("\n"));
 
     setStatus("ready");
     window.location.href = `mailto:${siteConfig.email}?subject=${subject}&body=${body}`;
@@ -58,12 +57,6 @@ export function ContactForm() {
       className="space-y-5 rounded-xl border border-navy/10 bg-white p-6 shadow-sm sm:p-8"
       noValidate
     >
-      <p className="text-sm text-charcoal/70">
-        This form opens your email client with a pre-filled message to{" "}
-        <strong>{siteConfig.email}</strong>. Server-side form wiring comes next —
-        nothing is posted to a backend yet.
-      </p>
-
       <div>
         <label htmlFor="name" className="block text-sm font-medium text-navy">
           Full name <span className="text-red-700">*</span>
@@ -88,6 +81,19 @@ export function ContactForm() {
           type="email"
           autoComplete="email"
           required
+          className="mt-1 w-full rounded-md border border-navy/20 bg-cream px-3 py-2 text-charcoal shadow-sm focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/40"
+        />
+      </div>
+
+      <div>
+        <label htmlFor="phone" className="block text-sm font-medium text-navy">
+          Phone (optional)
+        </label>
+        <input
+          id="phone"
+          name="phone"
+          type="tel"
+          autoComplete="tel"
           className="mt-1 w-full rounded-md border border-navy/20 bg-cream px-3 py-2 text-charcoal shadow-sm focus:border-gold focus:outline-none focus:ring-2 focus:ring-gold/40"
         />
       </div>
