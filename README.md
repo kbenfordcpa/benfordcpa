@@ -16,7 +16,7 @@ Production-ready Next.js (App Router) marketing site for **Benford Consulting, L
 | `/` | Homepage (local keywords, services preview, FAQ + FAQPage schema) |
 | `/about` | About Kolby Benford, CPA (+ Person schema) |
 | `/services` | Full services (clean URL; not `/services-content`) |
-| `/contact` | Consultation request (mailto form; no backend email yet) |
+| `/contact` | Consultation request (sent by the server through Resend) |
 | `/llms.txt` | Concise firm summary for AI crawlers |
 | `/sitemap.xml` | App Router `sitemap.ts` |
 | `/robots.txt` | App Router `robots.ts` |
@@ -42,17 +42,17 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Environment
 
-No required environment variables for the current build.
+The site builds with no environment variables. The consultation form cannot deliver email until the Resend variables below are set on the server (locally in `.env.local`, and on Vercel for Production). Do not commit API keys, and do not prefix these with `NEXT_PUBLIC_`.
 
-- Contact form uses **client-side `mailto:`** to `kolby@benfordcpa.com`. It does **not** send email from the server.
-- When you wire a real form backend (Resend, Formspree, etc.), add secrets via Vercel env vars — do **not** commit API keys.
+| Variable | Required | Purpose |
+| --- | --- | --- |
+| `RESEND_API_KEY` | Yes, to send | Resend API key. Store it as a Vercel Secret. |
+| `CONTACT_FROM_EMAIL` | Yes, to send | From address on a domain verified in Resend, such as `Benford Consulting <consultations@benfordcpa.com>`. |
+| `CONTACT_TO_EMAIL` | No | Inbox that receives requests. Defaults to `kolby@benfordcpa.com`. |
 
-Optional future vars (not used yet):
+If those required values are missing, the visitor sees a normal failure with the public email address. The server logs the configuration problem and does not show setup instructions on the page.
 
-```bash
-# CONTACT_TO_EMAIL=kolby@benfordcpa.com
-# RESEND_API_KEY=
-```
+See `.env.example`. Analytics IDs (`NEXT_PUBLIC_GA_MEASUREMENT_ID`, `NEXT_PUBLIC_CLARITY_PROJECT_ID`) stay optional.
 
 ## NAP / content policy
 
