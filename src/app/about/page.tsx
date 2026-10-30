@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { CtaBanner } from "@/components/CtaBanner";
 import { JsonLd } from "@/components/JsonLd";
@@ -131,12 +132,27 @@ export default function AboutPage() {
           >
             Family and community
           </h2>
-          <p className="mt-4 leading-relaxed text-charcoal/85">
-            Kolby lives in Florence with his wife, Leann, and their
-            son, Thomas. They’re active members of Spring Valley Church of God.
-            Outside of work, Kolby enjoys spending time with his family, camping,
-            and woodworking.
-          </p>
+          <div className="mt-4 grid gap-8 sm:grid-cols-5 sm:items-start">
+            <p className="leading-relaxed text-charcoal/85 sm:col-span-3">
+              Kolby lives in Florence with his wife, Leann, and their
+              son, Thomas. They’re active members of Spring Valley Church of God.
+              Outside of work, Kolby enjoys spending time with his family, camping,
+              and woodworking.
+            </p>
+            <figure className="mx-auto w-full max-w-xs sm:col-span-2 sm:max-w-none">
+              <Image
+                src="/images/kolby-benford-family-florence-al.jpg"
+                alt="Kolby Benford, CPA, with his family in Florence, AL"
+                width={800}
+                height={1200}
+                sizes="(min-width: 640px) 300px, 320px"
+                className="h-auto w-full rounded-xl border border-navy/10 shadow-sm"
+              />
+              <figcaption className="mt-3 text-center text-sm text-charcoal/70">
+                Kolby with his family — faith, family, and faithful stewardship.
+              </figcaption>
+            </figure>
+          </div>
         </section>
 
         <aside className="mt-12 rounded-xl border border-navy/10 bg-white p-6 shadow-sm">
