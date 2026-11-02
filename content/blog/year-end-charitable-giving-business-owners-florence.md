@@ -6,7 +6,7 @@ seoDescription: "Charitable giving tax moves for business owners before Dec 31: 
 date: "2026-11-02"
 author: "Kolby Benford, CPA"
 slug: "year-end-charitable-giving-business-owners-florence"
-draft: true
+draft: false
 relatedServices:
   - tax-planning
   - tax-preparation
