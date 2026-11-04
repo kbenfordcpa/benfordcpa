@@ -1,5 +1,6 @@
 ---
 title: "What a Virtual CFO Actually Does for Growing Florence Businesses"
+seoTitle: "What a Virtual CFO Does for Growing Florence, AL Businesses"
 description: "Plain-language look at virtual CFO work for growing Florence businesses — cash flow, KPIs, forecasts, and how it differs from bookkeeping and tax prep."
 date: "2026-10-06"
 author: "Kolby Benford, CPA"

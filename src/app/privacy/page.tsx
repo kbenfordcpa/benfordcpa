@@ -5,9 +5,9 @@ import { openGraphWithDefault } from "@/lib/og";
 import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy | Benford Consulting, LLC",
+  title: { absolute: "Privacy Policy | Benford Consulting, LLC" },
   description:
-    "How Benford Consulting, LLC collects and uses information on www.benfordcpa.com — contact forms, Google Analytics, Microsoft Clarity, cookies, and your choices.",
+    "How Benford Consulting, LLC uses information on benfordcpa.com — contact forms, Google Analytics, Microsoft Clarity, cookies, and your choices.",
   alternates: { canonical: "/privacy" },
   openGraph: openGraphWithDefault({
     title: "Privacy Policy | Benford Consulting, LLC",

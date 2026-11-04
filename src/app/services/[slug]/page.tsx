@@ -26,8 +26,12 @@ export async function generateMetadata({
     return { title: "Service not found" };
   }
 
-  const title = `${service.title} | CPA in Florence, AL | Benford Consulting`;
-  const description = `${service.summary} Serving Florence, Alabama.`;
+  const title =
+    ("seoTitle" in service && service.seoTitle) ||
+    `${service.title} | CPA in Florence, AL | Benford Consulting`;
+  const description =
+    ("seoDescription" in service && service.seoDescription) ||
+    `${service.summary} Serving Florence, Alabama.`;
 
   return {
     title: { absolute: title },

@@ -50,6 +50,8 @@ export const services = [
   {
     slug: "tax-planning",
     title: "Tax Planning",
+    seoDescription:
+      "Proactive tax planning to minimize your tax burden, with deep expertise in real estate investment and ownership. Serving Florence, AL.",
     subtitle: "Specializing in Real Estate Taxation",
     summary:
       "Proactive strategy to minimize your tax burden, with deep expertise in the unique rules around real estate investment and ownership.",
@@ -110,6 +112,7 @@ export const services = [
   {
     slug: "accounting-system-setup",
     title: "Accounting System Setup",
+    seoTitle: "Accounting System Setup in Florence, AL | Benford Consulting",
     subtitle: "Tools that fit how you operate",
     summary:
       "Clean implementation of the right accounting tools and processes, built to fit how your business actually runs.",
