@@ -1,5 +1,6 @@
 ---
 title: "When Florence Small Businesses Need a CPA"
+seoTitle: "When Florence, AL Small Business Owners Need a CPA"
 description: "Signs businesses in Florence need a CPA—growth, hiring, rentals, complex tax, and proactive planning versus just filing."
 date: "2026-09-22"
 author: "Kolby Benford, CPA"

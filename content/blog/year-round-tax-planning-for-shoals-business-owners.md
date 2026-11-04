@@ -1,5 +1,6 @@
 ---
 title: "Year-Round Tax Planning for Florence Business Owners"
+seoTitle: "Year-Round Tax Planning for Florence, AL Business Owners"
 description: "Why Florence small businesses need tax planning beyond April—quarterly estimates, timing decisions, clean books, and a practical year-round rhythm."
 date: "2026-09-28"
 author: "Kolby Benford, CPA"
