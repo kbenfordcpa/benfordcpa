@@ -1,28 +1,49 @@
-import { faqs } from "@/lib/site";
+import { faqs as defaultFaqs } from "@/lib/site";
+
+type FaqItem = {
+  question: string;
+  answer: string;
+};
 
 type FaqSectionProps = {
   title?: string;
-  intro?: string;
+  intro?: string | null;
+  items?: readonly FaqItem[];
+  embedded?: boolean;
 };
 
 export function FaqSection({
   title = "Frequently asked questions",
   intro = "Clear answers for individuals and business owners considering a CPA in Florence, Alabama.",
+  items = defaultFaqs,
+  embedded = false,
 }: FaqSectionProps) {
+  const headingId = embedded
+    ? title.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
+    : "faq-heading";
+
   return (
     <section
-      className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8"
-      aria-labelledby="faq-heading"
+      className={
+        embedded
+          ? "mt-12"
+          : "mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8"
+      }
+      aria-labelledby={headingId}
     >
       <h2
-        id="faq-heading"
-        className="font-serif text-3xl font-semibold text-navy sm:text-4xl"
+        id={headingId}
+        className={
+          embedded
+            ? "font-serif text-2xl font-semibold text-navy"
+            : "font-serif text-3xl font-semibold text-navy sm:text-4xl"
+        }
       >
         {title}
       </h2>
-      <p className="mt-3 text-charcoal/80">{intro}</p>
-      <dl className="mt-10 space-y-6">
-        {faqs.map((faq) => (
+      {intro ? <p className="mt-3 text-charcoal/80">{intro}</p> : null}
+      <dl className={embedded ? "mt-6 space-y-6" : "mt-10 space-y-6"}>
+        {items.map((faq) => (
           <div
             key={faq.question}
             className="rounded-lg border border-navy/10 bg-white p-5 shadow-sm"
