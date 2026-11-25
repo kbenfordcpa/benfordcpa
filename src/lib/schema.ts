@@ -114,11 +114,13 @@ export function personJsonLd() {
   };
 }
 
-export function faqPageJsonLd() {
+export function faqPageJsonLd(
+  items: readonly { question: string; answer: string }[] = faqs,
+) {
   return {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs.map((faq) => ({
+    mainEntity: items.map((faq) => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: {

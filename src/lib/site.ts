@@ -72,6 +72,9 @@ export const services = [
   {
     slug: "virtual-cfo",
     title: "Virtual CFO",
+    seoTitle: "Virtual CFO Services for Florence, AL Business Owners",
+    seoDescription:
+      "Part-time CFO help for Florence, AL business owners: cash-flow forecasts, monthly reporting, and KPIs, without the cost of a full-time hire.",
     subtitle: "Strategic financial leadership",
     summary:
       "Strategic financial guidance and reporting for growing businesses, without the cost of a full-time hire.",
@@ -87,7 +90,91 @@ export const services = [
       "Advise alongside your books so strategy stays grounded in clean numbers.",
     ],
     detailParagraph:
-      "Virtual CFO support gives growing businesses in Florence leadership-level finance insight — cash-flow planning, reporting, and KPI tracking — without a full-time hire. It pairs naturally with bookkeeping and tax work so owners have both clean books and forward-looking advice.",
+      "Virtual CFO support gives business owners in Florence, AL leadership-level finance insight — cash-flow planning, reporting, and KPI tracking — without a full-time hire. It pairs naturally with bookkeeping and tax work so owners have both clean books and forward-looking advice.",
+    extraSections: [
+      {
+        heading: "Signs it's time for a virtual CFO",
+        intro:
+          "Many business owners start looking for CFO-level help when one or more of these sounds familiar:",
+        bullets: [
+          {
+            text: "You're profitable on paper but cash still feels tight from month to month.",
+          },
+          {
+            text: "You're weighing a big decision, such as hiring, buying equipment, or taking on debt, and want to see the numbers first.",
+          },
+          {
+            text: "Your books are current, but nobody turns them into reports you actually use.",
+          },
+          {
+            text: "Your lender, investors, or partners are asking for forecasts or regular financial reporting.",
+          },
+          {
+            text: "You need more than tax season help, but not a full-time CFO salary.",
+          },
+        ],
+      },
+      {
+        heading: "What the work can include",
+        bullets: [
+          {
+            text: "Cash-flow forecasting so you can see tight months coming and plan for them.",
+          },
+          {
+            text: "Monthly or quarterly reporting in plain English, with the few KPIs that matter for your business.",
+          },
+          {
+            text: "Budgeting and planning for the year ahead, tied to your tax planning.",
+          },
+          {
+            text: "Decision support on pricing, hiring, financing, and major purchases.",
+          },
+        ],
+        closing:
+          'Proverbs 27:23 says, "Know well the condition of your flocks, and give attention to your herds" (ESV). For a business owner, that means knowing your numbers well enough to make sound decisions. Faithful stewardship starts with clear, current information.',
+      },
+    ],
+    faqs: [
+      {
+        question:
+          "What's the difference between a bookkeeper and a virtual CFO?",
+        answer:
+          "A bookkeeper keeps your records accurate and current. A virtual CFO uses those records to forecast, report, and advise on decisions. Many business owners need both, and the two work best together.",
+      },
+      {
+        question: "Do my books need to be clean first?",
+        answer:
+          "Advice is only as good as the numbers behind it. If your books are behind, the first step is usually bookkeeping cleanup, then CFO-level reporting builds on top of it.",
+      },
+      {
+        question: "Is a virtual CFO only for large businesses?",
+        answer:
+          "No. Virtual CFO support is built for small and growing businesses that need leadership-level financial insight on a part-time or project basis, without the cost of a full-time hire.",
+      },
+    ],
+    relatedServiceLinks: [
+      { href: "/services/bookkeeping", label: "Bookkeeping" },
+      { href: "/services/tax-planning", label: "Tax Planning" },
+      {
+        href: "/services/accounting-system-setup",
+        label: "Accounting System Setup",
+      },
+    ],
+    relatedReading: [
+      {
+        href: "/blog/what-a-virtual-cfo-actually-does-for-growing-shoals-businesses",
+        label:
+          "What a Virtual CFO Actually Does for Growing Florence Businesses",
+      },
+      {
+        href: "/blog/tax-prep-vs-tax-planning-before-year-end-florence",
+        label: "Tax Prep vs. Tax Planning",
+      },
+      {
+        href: "/blog/starting-2027-clean-books-accounting-system-florence",
+        label: "Starting 2027 on Clean Books",
+      },
+    ],
   },
   {
     slug: "tax-preparation",
@@ -153,6 +240,9 @@ export const services = [
   {
     slug: "ai-implementation",
     title: "AI Implementation",
+    seoTitle: "AI for Bookkeeping & Reporting | CPA in Florence, AL",
+    seoDescription:
+      "Practical AI help for Florence, AL business owners: faster bookkeeping, reporting, and document work, with CPA review kept on what matters.",
     subtitle: "Practical tools for finance workflows",
     summary:
       "Practical AI tools built into your financial workflows to save time and improve accuracy.",
@@ -169,6 +259,71 @@ export const services = [
     ],
     detailParagraph:
       "AI implementation focuses on practical tools in financial workflows — speeding bookkeeping, reporting, or document work without hype or risky shortcuts. Owners keep human oversight on compliance-sensitive tasks while cutting repetitive busywork.",
+    extraSections: [
+      {
+        heading: "Where AI can help",
+        intro:
+          "For most business owners, the best place to start with AI is the repetitive financial work that eats up hours each month. Examples:",
+        bullets: [
+          {
+            label: "Bookkeeping",
+            text: "suggesting categories for routine transactions and flagging items that look out of place, so a person reviews the exceptions instead of every line.",
+          },
+          {
+            label: "Documents",
+            text: "pulling key details from receipts, bills, and statements so they don't have to be typed in by hand.",
+          },
+          {
+            label: "Reporting",
+            text: "drafting a plain-English summary of the month's numbers that you or your bookkeeper then review and edit.",
+          },
+          {
+            label: "Process cleanup",
+            text: "documenting your month-end steps so the routine parts can be automated and the judgment calls stay with people.",
+          },
+        ],
+      },
+      {
+        heading: "What stays human",
+        intro:
+          "AI is a tool, not a replacement for judgment. Tax positions, compliance filings, and final financial reports are always reviewed by a person. We also look at where your data goes before a tool is used, so client and financial information is handled responsibly. Faithful stewardship applies to your time and to your information.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is AI safe to use with my financial data?",
+        answer:
+          "It can be, when the tool is chosen carefully and access is limited to what it needs. Part of this service is reviewing where your data goes before anything is set up.",
+      },
+      {
+        question: "Do I need to change accounting software to use AI?",
+        answer:
+          "Not necessarily. Many improvements work with the system you already have. If your current setup is holding you back, that is where accounting system setup comes in.",
+      },
+      {
+        question: "Will AI replace my bookkeeper or CPA?",
+        answer:
+          "No. The goal is to cut repetitive busywork so the people involved can spend more time on review, planning, and decisions.",
+      },
+    ],
+    relatedServiceLinks: [
+      { href: "/services/bookkeeping", label: "Bookkeeping" },
+      {
+        href: "/services/accounting-system-setup",
+        label: "Accounting System Setup",
+      },
+      { href: "/services/virtual-cfo", label: "Virtual CFO" },
+    ],
+    relatedReading: [
+      {
+        href: "/blog/starting-2027-clean-books-accounting-system-florence",
+        label: "Starting 2027 on Clean Books",
+      },
+      {
+        href: "/blog/year-end-bookkeeping-checklist-business-owners-florence",
+        label: "Year-End Bookkeeping Checklist for Business Owners",
+      },
+    ],
   },
 ] as const;
 
